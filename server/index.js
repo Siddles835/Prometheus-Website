@@ -1,0 +1,42 @@
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const rootDir = path.resolve(__dirname, "..");
+const distDir = path.join(rootDir, "dist");
+
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+app.get("/api/health", (_req, res) => {
+  res.json({
+    ok: true,
+    service: "prometheus-website",
+    timestamp: new Date().toISOString(),
+  });
+});
+
+app.get("/api/site", (_req, res) => {
+  res.json({
+    name: "Prometheus",
+    contact: "business@prometheuscs.org",
+    registerUrl: "https://forms.gle/Cc2eyXE55KyKgbbx9",
+  });
+});
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(distDir));
+  app.use((req, res, next) => {
+    if (req.method !== "GET" && req.method !== "HEAD") {
+      next();
+      return;
+    }
+    res.sendFile(path.join(distDir, "index.html"));
+  });
+}
+
+app.listen(PORT, () => {
+  console.log(`Prometheus server listening on http://localhost:${PORT}`);
+});
