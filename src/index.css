@@ -98,12 +98,13 @@ button,
 }
 
 .site-header:not(.is-scrolled) .nav-cta {
-  background: #fff;
-  color: var(--navy);
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0 8px 22px rgba(36, 87, 230, 0.35);
 }
 
 .site-header:not(.is-scrolled) .nav-cta:hover {
-  background: #e8eef7;
+  background: #3365f0;
 }
 
 .site-header:not(.is-scrolled) .nav-toggle {
@@ -178,16 +179,18 @@ button,
   justify-content: center;
   padding: 0.72rem 1.15rem;
   border-radius: 10px;
-  background: var(--ink);
+  background: var(--blue);
   color: var(--white);
   font-size: 0.88rem;
   font-weight: 600;
   letter-spacing: 0.03em;
-  transition: transform 0.2s ease, background 0.2s ease;
+  box-shadow: 0 6px 18px rgba(36, 87, 230, 0.28);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-cta:hover {
-  background: var(--blue);
+  background: #3365f0;
+  box-shadow: 0 10px 24px rgba(36, 87, 230, 0.38);
   transform: translateY(-1px);
 }
 
