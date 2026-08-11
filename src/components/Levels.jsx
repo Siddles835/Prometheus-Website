@@ -8,7 +8,7 @@ export default function Levels() {
           <p className="section-label">Learning path</p>
           <h2 className="section-title">Join our classes</h2>
           <p className="section-lead">
-            A clear path from first lines of Python to confident work with real data structures.
+            A clear path from Basic Python to Advanced Python and Machine Learning.
           </p>
         </div>
         <div className="levels-grid">

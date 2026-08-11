@@ -21,8 +21,10 @@ app.get("/api/health", (_req, res) => {
 app.get("/api/site", (_req, res) => {
   res.json({
     name: "Prometheus",
-    contact: "business@prometheuscs.org",
+    contact: "prometheuscompsci@gmail.com",
     registerUrl: "https://forms.gle/Cc2eyXE55KyKgbbx9",
+    internshipUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog",
   });
 });
 

@@ -379,6 +379,15 @@ button,
   border-color: rgba(255, 255, 255, 0.7);
 }
 
+.btn-dark {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.btn-dark:hover {
+  background: var(--blue);
+}
+
 /* Sections */
 section {
   padding: 6.5rem 0;
@@ -725,6 +734,46 @@ section {
   font-weight: 500;
 }
 
+/* Internships */
+.internships {
+  background:
+    linear-gradient(180deg, transparent, rgba(13, 39, 84, 0.035) 18%, rgba(13, 39, 84, 0.05) 82%, transparent);
+}
+
+.internships-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 3.2rem;
+  align-items: start;
+}
+
+.internship-actions {
+  margin-top: 1.6rem;
+}
+
+.internship-points {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.internship-point h3 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.internship-point p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.internship-point + .internship-point {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
 /* Testimonials */
 .testimonials {
   background:
@@ -995,6 +1044,7 @@ section {
   .why-grid,
   .gallery-grid,
   .levels-grid,
+  .internships-grid,
   .testimonial-grid,
   .team-grid,
   .team-grid.cols-2,

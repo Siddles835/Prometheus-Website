@@ -1,10 +1,13 @@
 export const REGISTER_URL = "https://forms.gle/Cc2eyXE55KyKgbbx9";
-export const CONTACT_EMAIL = "business@prometheuscs.org";
+export const INTERNSHIP_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog";
+export const CONTACT_EMAIL = "prometheuscompsci@gmail.com";
 
 export const navLinks = [
   { href: "#why", label: "Why Prometheus" },
   { href: "#gallery", label: "Gallery" },
   { href: "#levels", label: "Levels" },
+  { href: "#internships", label: "Internships" },
   { href: "#testimonials", label: "Testimonials" },
   { href: "#team", label: "Team" },
 ];
@@ -90,21 +93,36 @@ export const gallery = [
 export const levels = [
   {
     num: "Level 01",
-    title: "Python Fundamentals",
+    title: "Basic Python",
     description: "Start your coding journey with variables, data types, and basic I/O.",
     topics: ["Variables", "Data Types", "Input/Output", "Strings", "Numbers"],
   },
   {
     num: "Level 02",
-    title: "Control Flow & Functions",
-    description: "Learn to make decisions in code and write reusable functions.",
-    topics: ["If/Else", "Loops", "Functions", "Scope", "Error Handling"],
+    title: "Advanced Python",
+    description: "Learn to make decisions in code, write reusable functions, and work with complex data.",
+    topics: ["If/Else", "Loops", "Functions", "Data Structures", "Error Handling"],
   },
   {
     num: "Level 03",
-    title: "Data Structures",
-    description: "Master lists, dictionaries, sets, and how to work with complex data.",
-    topics: ["Lists", "Dictionaries", "Tuples", "Sets", "Comprehensions"],
+    title: "Machine Learning",
+    description: "Build real AI projects and learn how to train models with Python.",
+    topics: ["AI Concepts", "Python for ML", "Training Models", "Projects", "Evaluation"],
+  },
+];
+
+export const internshipHighlights = [
+  {
+    title: "Teach and mentor",
+    body: "Support live classes, help students debug, and grow as an educator.",
+  },
+  {
+    title: "Build real programs",
+    body: "Contribute to curriculum, operations, and community initiatives.",
+  },
+  {
+    title: "Grow with impact",
+    body: "Join a mission-driven team expanding free tech education for youth.",
   },
 ];
 

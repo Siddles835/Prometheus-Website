@@ -4,6 +4,7 @@ import Gallery from "./components/Gallery";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Impact from "./components/Impact";
+import Internships from "./components/Internships";
 import Levels from "./components/Levels";
 import Sponsors from "./components/Sponsors";
 import Team from "./components/Team";
@@ -24,6 +25,7 @@ export default function App() {
         <Why />
         <Gallery />
         <Levels />
+        <Internships />
         <Testimonials />
         <Team />
         <FinalCta />
