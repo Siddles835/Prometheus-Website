@@ -1076,8 +1076,9 @@ section {
   }
 
   .site-header:not(.is-scrolled) .nav-cta {
-    background: var(--ink);
+    background: var(--blue);
     color: var(--white);
+    box-shadow: none;
   }
 
   .nav-links a,
