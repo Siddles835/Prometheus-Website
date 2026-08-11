@@ -1,1 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prometheus — Free Python Classes for Students</title>
+    <meta
+      name="description"
+      content="Free Python classes for students. Learn coding from fundamentals to advanced projects with Prometheus."
+    />
+    <meta name="author" content="Prometheus" />
+    <meta property="og:title" content="Prometheus — Student Portal" />
+    <meta
+      property="og:description"
+      content="Free Python classes for students. From zero to building real projects."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/brand/prometheus-logo.png" />
+    <link rel="icon" href="assets/brand/prometheus-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="#top" aria-label="Prometheus home">
+          <img src="assets/brand/prometheus-logo.png" alt="" width="42" height="42" />
+          <span>PROMETHEUS</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#why">Why Prometheus</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#levels">Levels</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#team">Team</a></li>
+          <li>
+            <a class="nav-cta" href="https://forms.gle/Cc2eyXE55KyKgbbx9" target="_blank" rel="noopener noreferrer">
+              Register
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
+    <main id="top">
+      <section class="hero" aria-label="Prometheus introduction">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="assets/gallery/gallery-1.jpeg"
+            alt=""
+            width="1600"
+            height="950"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="hero-brand">PROMETHEUS<span>.</span></p>
+          <h1>Build the future at Prometheus.</h1>
+          <p class="hero-copy">
+            Join hundreds of youth innovators shaping the next wave of technology. Participate in
+            impactful hackathons to showcase talent and join our classes to learn Python and AI with
+            live guidance from industry professionals. Our project-first curriculum empowers students
+            to build real-world skills and confidence in coding.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#levels">View learning path</a>
+            <a
+              class="btn btn-ghost"
+              href="https://forms.gle/Cc2eyXE55KyKgbbx9"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Register now</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="impact" aria-label="Impact">
+        <div class="container">
+          <div class="impact-panel reveal">
+            <div class="impact-item">
+              <strong>1800+</strong>
+              <span>Students enrolled</span>
+            </div>
+            <div class="impact-item">
+              <strong>$1700</strong>
+              <span>In hackathon prizes</span>
+            </div>
+            <div class="impact-item">
+              <strong>50+</strong>
+              <span>Recruited staff &amp; trainees</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sponsors" aria-label="Sponsors">
+        <div class="container">
+          <div class="sponsors-inner reveal">
+            <p class="sponsors-label">Supported by</p>
+            <div class="sponsor-logos">
+              <a
+                class="sponsor sponsor-featherless"
+                href="https://featherless.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="featherless.ai"
+              >
+                <img src="assets/sponsors/featherless.png" alt="featherless.ai logo" width="48" height="48" />
+                <span class="sponsor-name">featherless.ai</span>
+              </a>
+              <a
+                class="sponsor sponsor-rise"
+                href="https://www.riseresearch.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="RISE Research"
+              >
+                <img src="assets/sponsors/rise-research.svg" alt="RISE Research logo" width="180" height="52" />
+              </a>
+              <a
+                class="sponsor sponsor-flatlogic"
+                href="https://flatlogic.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Flatlogic"
+              >
+                <img src="assets/sponsors/flatlogic.svg" alt="" width="40" height="40" />
+                <span class="sponsor-name">Flatlogic</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why">
+        <div class="container why-grid">
+          <div class="reveal">
+            <p class="section-label">Why Prometheus</p>
+            <h2 class="section-title">A student-first coding experience with structure and support.</h2>
+            <p class="section-lead">
+              Our curriculum is designed for young learners who want to move from beginner concepts
+              to real Python projects with confidence.
+            </p>
+          </div>
+          <div class="why-points reveal">
+            <article class="why-point">
+              <h3>Live guidance</h3>
+              <p>Weekly sessions and coaching help students learn by building.</p>
+            </article>
+            <article class="why-point">
+              <h3>Professional IT workers teach classes</h3>
+              <p>Learn from experienced professionals in the field.</p>
+            </article>
+            <article class="why-point">
+              <h3>Project-first, student-friendly path</h3>
+              <p>
+                Each level focuses on hands-on coding with real-world outcomes. Clear steps and
+                simple explanations keep learners moving forward.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="container" style="margin-top: 2.5rem">
+          <figure class="why-visual reveal">
+            <img
+              src="assets/gallery/gallery-2.jpeg"
+              alt="Prometheus classroom session with today’s roadmap on screen"
+              width="1600"
+              height="815"
+              loading="lazy"
+            />
+            <figcaption>Live sessions with structured roadmaps and real coaching.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Gallery</p>
+            <h2 class="section-title">Classroom energy in action</h2>
+            <p class="section-lead">
+              Moments from live Prometheus classes — students coding, presenting, and learning
+              together.
+            </p>
+          </div>
+          <div class="gallery-grid">
+            <figure class="reveal">
+              <img
+                src="assets/gallery/gallery-1.jpeg"
+                alt="Prometheus live coding class"
+                width="1600"
+                height="950"
+                loading="lazy"
+              />
+              <figcaption>Live coding</figcaption>
+            </figure>
+            <figure class="reveal">
+              <img
+                src="assets/gallery/gallery-2.jpeg"
+                alt="Prometheus classroom session"
+                width="1600"
+                height="815"
+                loading="lazy"
+              />
+              <figcaption>Classroom session</figcaption>
+            </figure>
+            <figure class="reveal">
+              <img
+                src="assets/gallery/gallery-3.jpeg"
+                alt="Prometheus students learning together"
+                width="1600"
+                height="1001"
+                loading="lazy"
+              />
+              <figcaption>Learning together</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-row reveal">
+            <figure>
+              <img
+                src="assets/gallery/gallery-4.jpeg"
+                alt="Prometheus student project work"
+                width="1600"
+                height="1013"
+                loading="lazy"
+              />
+              <figcaption>Project work</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="levels">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Learning path</p>
+            <h2 class="section-title">Join our classes</h2>
+            <p class="section-lead">
+              A clear path from first lines of Python to confident work with real data structures.
+            </p>
+          </div>
+          <div class="levels-grid">
+            <article class="level reveal">
+              <span class="level-num">Level 01</span>
+              <h3>Python Fundamentals</h3>
+              <p>Start your coding journey with variables, data types, and basic I/O.</p>
+              <ul class="topics">
+                <li>Variables</li>
+                <li>Data Types</li>
+                <li>Input/Output</li>
+                <li>Strings</li>
+                <li>Numbers</li>
+              </ul>
+            </article>
+            <article class="level reveal">
+              <span class="level-num">Level 02</span>
+              <h3>Control Flow &amp; Functions</h3>
+              <p>Learn to make decisions in code and write reusable functions.</p>
+              <ul class="topics">
+                <li>If/Else</li>
+                <li>Loops</li>
+                <li>Functions</li>
+                <li>Scope</li>
+                <li>Error Handling</li>
+              </ul>
+            </article>
+            <article class="level reveal">
+              <span class="level-num">Level 03</span>
+              <h3>Data Structures</h3>
+              <p>Master lists, dictionaries, sets, and how to work with complex data.</p>
+              <ul class="topics">
+                <li>Lists</li>
+                <li>Dictionaries</li>
+                <li>Tuples</li>
+                <li>Sets</li>
+                <li>Comprehensions</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Testimonials</p>
+            <h2 class="section-title">What learners say</h2>
+            <p class="section-lead">Families and students on the Prometheus experience.</p>
+          </div>
+          <div class="testimonial-grid">
+            <blockquote class="testimonial reveal">
+              <p>
+                “My son liked the activities and learning about AI, ML, and DL. He liked the AI
+                python project very much. Hasith is very confident with using Python to train AI and
+                understands how you train AI models in Python. The instructors were professional,
+                knowledgeable, and very patient. Having teachers with real experience in IT and AI
+                made the lessons practical and engaging. They explained complex concepts in a way
+                that was easy for students to understand.”
+              </p>
+              <footer>Krishnaveni — Parent of Hasith (Python L3)</footer>
+            </blockquote>
+            <blockquote class="testimonial reveal">
+              <p>“I learned how to code some python with zero previous experience.”</p>
+              <footer>Ishan Mani (Python L1)</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-label">Our team</p>
+            <h2 class="section-title">Meet the people behind Prometheus</h2>
+            <p class="section-lead">
+              Educators, leaders, and community builders working together to make technology
+              education more accessible.
+            </p>
+          </div>
+
+          <div class="team-tier reveal">
+            <p class="tier-label">The Spark — Co-Founders</p>
+            <div class="team-grid cols-2">
+              <article class="person">
+                <img class="person-avatar" src="assets/brand/prometheus-logo.png" alt="" />
+                <div>
+                  <h3>Co-Founder Name</h3>
+                  <p class="role">Co-Founder &amp; Executive Director</p>
+                  <p class="bio">
+                    Add a short biography about this co-founder's vision, experience, and the work
+                    they lead at Prometheus.
+                  </p>
+                </div>
+              </article>
+              <article class="person">
+                <img class="person-avatar" src="assets/brand/prometheus-logo.png" alt="" />
+                <div>
+                  <h3>Co-Founder Name</h3>
+                  <p class="role">Co-Founder &amp; Program Director</p>
+                  <p class="bio">
+                    Add a short biography about this co-founder's impact, background, and commitment
+                    to student learning.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="team-tier reveal">
+            <p class="tier-label">The Flame — Managers</p>
+            <div class="team-grid cols-2">
+              <article class="person">
+                <img class="person-avatar" src="assets/brand/prometheus-logo.png" alt="" />
+                <div>
+                  <h3>Manager Name</h3>
+                  <p class="role">Program Manager</p>
+                  <p class="bio">
+                    Add a short biography describing the programs, people, or initiatives this
+                    manager supports.
+                  </p>
+                </div>
+              </article>
+              <article class="person">
+                <img class="person-avatar" src="assets/brand/prometheus-logo.png" alt="" />
+                <div>
+                  <h3>Manager Name</h3>
+                  <p class="role">Operations Manager</p>
+                  <p class="bio">
+                    Add a short biography describing this manager's experience and role in keeping
+                    the team moving.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="team-tier reveal">
+            <p class="tier-label">Guiding the Mission — Board Members</p>
+            <div class="team-grid cols-2">
+              <article class="person">
+                <img class="person-avatar" src="assets/brand/prometheus-logo.png" alt="" />
+                <div>
+                  <h3>Board Member Name</h3>
+                  <p class="role">Board Member</p>
+                  <p class="bio">
+                    Add a short biography about this board member's expertise and the perspective
+                    they bring to Prometheus.
+                  </p>
+                </div>
+              </article>
+              <article class="person">
+                <img class="person-avatar" src="assets/brand/prometheus-logo.png" alt="" />
+                <div>
+                  <h3>Board Member Name</h3>
+                  <p class="role">Board Member</p>
+                  <p class="bio">
+                    Add a short biography about this board member's leadership, community work, or
+                    professional background.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="team-tier reveal">
+            <p class="tier-label">Powering Every Program — Staff Members</p>
+            <div class="team-grid">
+              <article class="person">
+                <img class="person-avatar" src="assets/brand/prometheus-logo.png" alt="" />
+                <div>
+                  <h3>Staff Member Name</h3>
+                  <p class="role">Lead Instructor</p>
+                  <p class="bio">
+                    Add a short biography about this staff member's teaching experience and the
+                    subjects they love to share.
+                  </p>
+                </div>
+              </article>
+              <article class="person">
+                <img class="person-avatar" src="assets/brand/prometheus-logo.png" alt="" />
+                <div>
+                  <h3>Staff Member Name</h3>
+                  <p class="role">Curriculum Developer</p>
+                  <p class="bio">
+                    Add a short biography about this staff member's skills, projects, and
+                    contribution to the curriculum.
+                  </p>
+                </div>
+              </article>
+              <article class="person">
+                <img class="person-avatar" src="assets/brand/prometheus-logo.png" alt="" />
+                <div>
+                  <h3>Staff Member Name</h3>
+                  <p class="role">Community Coordinator</p>
+                  <p class="bio">
+                    Add a short biography about this staff member's work with students, families,
+                    and the wider community.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-label="Register">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div>
+              <h2>Ready to start building?</h2>
+              <p>
+                Join free Python classes, learn with live guidance, and grow alongside a community
+                of young innovators.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a
+                class="btn btn-primary"
+                href="https://forms.gle/Cc2eyXE55KyKgbbx9"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Register now</a
+              >
+              <a class="btn btn-ghost" href="mailto:business@prometheuscs.org">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="assets/brand/prometheus-logo.png" alt="" width="36" height="36" />
+          <span>PROMETHEUS</span>
+        </div>
+        <div class="footer-meta">
+          <p>
+            Contact us at
+            <a href="mailto:business@prometheuscs.org">business@prometheuscs.org</a>
+          </p>
+          <p>© 2026 Prometheus. Empowering students through code.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="featherless.ai">
+  <rect width="64" height="64" rx="12" fill="#F2E7A0"/>
+  <g fill="#111" transform="translate(20,11)">
+    <!-- vertical spine -->
+    <rect x="10" y="0" width="6.5" height="42" rx="1"/>
+    <!-- slanted bars to the right, decreasing -->
+    <g transform="skewY(-28)">
+      <rect x="16" y="6" width="16" height="6.5" rx="1"/>
+      <rect x="16" y="18" width="20" height="6.5" rx="1"/>
+      <rect x="16" y="30" width="12" height="6.5" rx="1"/>
+    </g>
+    <!-- left notches -->
+    <rect x="2" y="10" width="8" height="5" rx="0.8"/>
+    <rect x="2" y="22" width="8" height="5" rx="0.8"/>
+  </g>
+</svg>
