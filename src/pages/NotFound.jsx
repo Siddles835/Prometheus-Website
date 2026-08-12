@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
+import { FlameMark, OrbitGraphic } from "../components/icons/Icons";
 
 export default function NotFound() {
   return (
     <section className="not-found">
+      <div className="not-found-art" aria-hidden="true">
+        <OrbitGraphic className="not-found-orbit" />
+        <FlameMark className="not-found-flame" />
+      </div>
       <div className="container not-found-inner reveal">
         <p className="section-label">404</p>
         <h1 className="page-banner-title">Page not found</h1>

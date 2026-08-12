@@ -1,3 +1,4 @@
+import BannerAside from "../components/BannerAside";
 import Gallery from "../components/Gallery";
 import PageBanner from "../components/PageBanner";
 
@@ -8,6 +9,7 @@ export default function GalleryPage() {
         label="Gallery"
         title="Classroom energy in action"
         lead="Moments from live Prometheus classes — students coding, presenting, and learning together."
+        aside={<BannerAside variant="stats" />}
       />
       <Gallery />
     </>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { IconAdvanced, IconCode, IconImpact, IconLive, IconMl, IconMentor } from "./icons/Icons";
+import { IconLive, IconMentor, IconMl } from "./icons/Icons";
+import PathRail from "./PathRail";
 
 const pathways = [
   {
@@ -25,24 +26,23 @@ const pathways = [
   },
 ];
 
-const mini = [
-  { label: "Basic Python", Icon: IconCode },
-  { label: "Advanced Python", Icon: IconAdvanced },
-  { label: "Machine Learning", Icon: IconMl },
-  { label: "Community impact", Icon: IconImpact },
-];
-
 export default function HomePathways() {
   return (
     <section className="pathways" aria-label="Explore Prometheus">
       <div className="container">
-        <div className="section-head reveal">
-          <p className="section-label">Explore</p>
-          <h2 className="section-title">Built for ambitious learners</h2>
-          <p className="section-lead">
-            Dive into the experience, curriculum, and ways to contribute — each path designed to
-            help students grow with confidence.
-          </p>
+        <div className="section-head pathways-head reveal">
+          <div>
+            <p className="section-label">Explore</p>
+            <h2 className="section-title">Built for ambitious learners</h2>
+            <p className="section-lead">
+              Dive into the experience, curriculum, and ways to contribute — each path designed to
+              help students grow with confidence.
+            </p>
+          </div>
+          <div className="pathways-rail-panel">
+            <p className="banner-aside-label">Curriculum path</p>
+            <PathRail />
+          </div>
         </div>
 
         <div className="pathways-grid">
@@ -56,17 +56,6 @@ export default function HomePathways() {
               <p>{body}</p>
               <span className="pathway-link">Explore</span>
             </Link>
-          ))}
-        </div>
-
-        <div className="mini-graphics reveal" aria-hidden="true">
-          {mini.map(({ label, Icon }) => (
-            <div className="mini-graphic" key={label}>
-              <span className="graphic-icon small">
-                <Icon />
-              </span>
-              <span>{label}</span>
-            </div>
           ))}
         </div>
       </div>

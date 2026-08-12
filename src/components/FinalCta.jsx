@@ -1,6 +1,8 @@
 import { CONTACT_EMAIL, REGISTER_URL } from "../data/site";
 import { FlameMark, OrbitGraphic } from "./icons/Icons";
 
+const facts = ["Free for students", "Live mentors", "Project-first path"];
+
 export default function FinalCta() {
   return (
     <section className="final-cta" aria-label="Register">
@@ -9,6 +11,7 @@ export default function FinalCta() {
           <div className="cta-art" aria-hidden="true">
             <OrbitGraphic className="cta-orbit" />
             <FlameMark className="cta-flame" />
+            <img src="/assets/graphics/constellation.svg" alt="" className="cta-constellation" />
           </div>
           <img
             className="cta-logo"
@@ -23,6 +26,11 @@ export default function FinalCta() {
               Join free Python classes, learn with live guidance, and grow alongside a community of
               young innovators.
             </p>
+            <ul className="cta-facts" aria-label="Program highlights">
+              {facts.map((fact) => (
+                <li key={fact}>{fact}</li>
+              ))}
+            </ul>
           </div>
           <div className="cta-actions">
             <a

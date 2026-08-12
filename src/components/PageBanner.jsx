@@ -1,6 +1,6 @@
 import { FlameMark, OrbitGraphic } from "./icons/Icons";
 
-export default function PageBanner({ label, title, lead }) {
+export default function PageBanner({ label, title, lead, aside = null }) {
   return (
     <section className="page-banner" aria-label={title}>
       <div className="page-banner-art" aria-hidden="true">
@@ -8,10 +8,13 @@ export default function PageBanner({ label, title, lead }) {
         <OrbitGraphic className="page-banner-orbit" />
         <FlameMark className="page-banner-flame" />
       </div>
-      <div className="container page-banner-inner reveal">
-        {label ? <p className="section-label">{label}</p> : null}
-        <h1 className="page-banner-title">{title}</h1>
-        {lead ? <p className="page-banner-lead">{lead}</p> : null}
+      <div className={`container page-banner-layout${aside ? " has-aside" : ""}`}>
+        <div className="page-banner-inner reveal">
+          {label ? <p className="section-label">{label}</p> : null}
+          <h1 className="page-banner-title">{title}</h1>
+          {lead ? <p className="page-banner-lead">{lead}</p> : null}
+        </div>
+        {aside ? <div className="page-banner-aside-wrap reveal">{aside}</div> : null}
       </div>
     </section>
   );
