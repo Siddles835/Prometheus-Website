@@ -1,16 +1,27 @@
 import { whyPoints } from "../data/site";
+import { IconLive, IconProfessionals, IconProjects } from "./icons/Icons";
+
+const whyIcons = [IconLive, IconProfessionals, IconProjects];
 
 export default function Why() {
   return (
     <section className="why-page-section">
       <div className="container why-grid">
         <div className="why-points reveal">
-          {whyPoints.map((point) => (
-            <article className="why-point" key={point.title}>
-              <h3>{point.title}</h3>
-              <p>{point.body}</p>
-            </article>
-          ))}
+          {whyPoints.map((point, index) => {
+            const Icon = whyIcons[index] || IconLive;
+            return (
+              <article className="why-point" key={point.title}>
+                <span className="graphic-icon" aria-hidden="true">
+                  <Icon />
+                </span>
+                <div>
+                  <h3>{point.title}</h3>
+                  <p>{point.body}</p>
+                </div>
+              </article>
+            );
+          })}
         </div>
         <figure className="why-visual reveal">
           <img

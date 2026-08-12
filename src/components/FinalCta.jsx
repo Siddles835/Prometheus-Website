@@ -1,10 +1,15 @@
 import { CONTACT_EMAIL, REGISTER_URL } from "../data/site";
+import { FlameMark, OrbitGraphic } from "./icons/Icons";
 
 export default function FinalCta() {
   return (
     <section className="final-cta" aria-label="Register">
       <div className="container">
         <div className="cta-panel reveal">
+          <div className="cta-art" aria-hidden="true">
+            <OrbitGraphic className="cta-orbit" />
+            <FlameMark className="cta-flame" />
+          </div>
           <img
             className="cta-logo"
             src="/assets/brand/prometheus-hero-badge.png"

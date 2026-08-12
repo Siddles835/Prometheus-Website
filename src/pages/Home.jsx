@@ -1,5 +1,6 @@
 import FinalCta from "../components/FinalCta";
 import Hero from "../components/Hero";
+import HomePathways from "../components/HomePathways";
 import Sponsors from "../components/Sponsors";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Hero />
       <Sponsors />
+      <HomePathways />
       <FinalCta />
     </>
   );

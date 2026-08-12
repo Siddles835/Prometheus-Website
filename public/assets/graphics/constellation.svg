@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <g stroke="rgba(138,168,255,0.22)" stroke-width="1.2">
+    <path d="M120 140L260 90L390 180L520 120"/>
+    <path d="M680 80L820 150L960 100L1080 190"/>
+    <path d="M180 420L320 360L450 470L610 390L760 460"/>
+    <path d="M840 340L970 400L1100 330"/>
+  </g>
+  <g fill="rgba(138,168,255,0.45)">
+    <circle cx="120" cy="140" r="3.5"/>
+    <circle cx="260" cy="90" r="4"/>
+    <circle cx="390" cy="180" r="3"/>
+    <circle cx="520" cy="120" r="3.5"/>
+    <circle cx="680" cy="80" r="3"/>
+    <circle cx="820" cy="150" r="4"/>
+    <circle cx="960" cy="100" r="3"/>
+    <circle cx="1080" cy="190" r="3.5"/>
+    <circle cx="180" cy="420" r="3"/>
+    <circle cx="320" cy="360" r="3.5"/>
+    <circle cx="450" cy="470" r="4"/>
+    <circle cx="610" cy="390" r="3"/>
+    <circle cx="760" cy="460" r="3.5"/>
+    <circle cx="840" cy="340" r="3"/>
+    <circle cx="970" cy="400" r="4"/>
+    <circle cx="1100" cy="330" r="3"/>
+  </g>
+  <circle cx="900" cy="280" r="140" stroke="rgba(138,168,255,0.12)" stroke-width="1.4"/>
+  <circle cx="900" cy="280" r="90" stroke="rgba(138,168,255,0.1)" stroke-width="1.2"/>
+</svg>
