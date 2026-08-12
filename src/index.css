@@ -1039,8 +1039,6 @@ section {
   .levels-grid,
   .internships-grid,
   .testimonial-grid,
-  .team-grid,
-  .team-grid.cols-2,
   .cta-panel,
   .footer-grid,
   .hero-stats {
@@ -1130,10 +1128,6 @@ section {
     position: relative;
   }
 
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
-
   section {
     padding: 4.8rem 0;
   }
@@ -1160,15 +1154,6 @@ section {
 
   .cta-panel {
     padding: 1.5rem;
-  }
-
-  .person {
-    grid-template-columns: 60px 1fr;
-  }
-
-  .person-avatar {
-    width: 60px;
-    height: 60px;
   }
 
   .brand span {
