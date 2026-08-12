@@ -9,7 +9,6 @@ export const navLinks = [
   { href: "#levels", label: "Levels" },
   { href: "#internships", label: "Internships" },
   { href: "#testimonials", label: "Testimonials" },
-  { href: "#team", label: "Team" },
 ];
 
 export const stats = [
@@ -135,77 +134,5 @@ export const testimonials = [
   {
     quote: "I learned how to code some python with zero previous experience.",
     attribution: "Ishan Mani (Python L1)",
-  },
-];
-
-export const teamTiers = [
-  {
-    label: "The Spark — Co-Founders",
-    cols: 2,
-    members: [
-      {
-        name: "Co-Founder Name",
-        role: "Co-Founder & Executive Director",
-        bio: "Add a short biography about this co-founder's vision, experience, and the work they lead at Prometheus.",
-      },
-      {
-        name: "Co-Founder Name",
-        role: "Co-Founder & Program Director",
-        bio: "Add a short biography about this co-founder's impact, background, and commitment to student learning.",
-      },
-    ],
-  },
-  {
-    label: "The Flame — Managers",
-    cols: 2,
-    members: [
-      {
-        name: "Manager Name",
-        role: "Program Manager",
-        bio: "Add a short biography describing the programs, people, or initiatives this manager supports.",
-      },
-      {
-        name: "Manager Name",
-        role: "Operations Manager",
-        bio: "Add a short biography describing this manager's experience and role in keeping the team moving.",
-      },
-    ],
-  },
-  {
-    label: "Guiding the Mission — Board Members",
-    cols: 2,
-    members: [
-      {
-        name: "Board Member Name",
-        role: "Board Member",
-        bio: "Add a short biography about this board member's expertise and the perspective they bring to Prometheus.",
-      },
-      {
-        name: "Board Member Name",
-        role: "Board Member",
-        bio: "Add a short biography about this board member's leadership, community work, or professional background.",
-      },
-    ],
-  },
-  {
-    label: "Powering Every Program — Staff Members",
-    cols: 3,
-    members: [
-      {
-        name: "Staff Member Name",
-        role: "Lead Instructor",
-        bio: "Add a short biography about this staff member's teaching experience and the subjects they love to share.",
-      },
-      {
-        name: "Staff Member Name",
-        role: "Curriculum Developer",
-        bio: "Add a short biography about this staff member's skills, projects, and contribution to the curriculum.",
-      },
-      {
-        name: "Staff Member Name",
-        role: "Community Coordinator",
-        bio: "Add a short biography about this staff member's work with students, families, and the wider community.",
-      },
-    ],
   },
 ];

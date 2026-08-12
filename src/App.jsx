@@ -6,7 +6,6 @@ import Hero from "./components/Hero";
 import Internships from "./components/Internships";
 import Levels from "./components/Levels";
 import Sponsors from "./components/Sponsors";
-import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
 import Why from "./components/Why";
 import { useReveal } from "./hooks/useReveal";
@@ -25,7 +24,6 @@ export default function App() {
         <Levels />
         <Internships />
         <Testimonials />
-        <Team />
         <FinalCta />
       </main>
       <Footer />
