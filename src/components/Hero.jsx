@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { REGISTER_URL, stats } from "../data/site";
 
 export default function Hero() {
@@ -31,9 +32,9 @@ export default function Hero() {
             to build real-world skills and confidence in coding.
           </p>
           <div className="hero-actions">
-            <a className="btn btn-light" href="#levels">
+            <Link className="btn btn-light" to="/levels">
               View learning path
-            </a>
+            </Link>
             <a
               className="btn btn-primary"
               href={REGISTER_URL}

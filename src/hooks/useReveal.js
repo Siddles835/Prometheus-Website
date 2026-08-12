@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export function useReveal() {
+export function useReveal(pathname = "") {
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
     if (!("IntersectionObserver" in window)) {
@@ -20,7 +20,10 @@ export function useReveal() {
       { threshold: 0.16, rootMargin: "0px 0px -8% 0px" }
     );
 
-    reveals.forEach((el) => io.observe(el));
+    reveals.forEach((el) => {
+      el.classList.remove("is-visible");
+      io.observe(el);
+    });
     return () => io.disconnect();
-  }, []);
+  }, [pathname]);
 }

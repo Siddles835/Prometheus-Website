@@ -4,8 +4,17 @@ Professional nonprofit website for Prometheus — free Python classes for studen
 
 ## Stack
 
-- **React** + **Vite** frontend
+- **React** + **Vite** frontend with **React Router** multi-page navigation
 - **Node.js** + **Express** server for production and API routes
+
+## Pages
+
+- `/` Home
+- `/why` Why Prometheus
+- `/gallery` Gallery
+- `/levels` Levels
+- `/internships` Internships
+- `/testimonials` Testimonials
 
 ## Scripts
 

@@ -2,14 +2,11 @@ import { INTERNSHIP_URL, internshipHighlights } from "../data/site";
 
 export default function Internships() {
   return (
-    <section id="internships" className="internships">
+    <section className="internships">
       <div className="container internships-grid">
         <div className="reveal">
-          <p className="section-label">Internships</p>
-          <h2 className="section-title">Intern at Prometheus</h2>
-          <p className="section-lead">
-            Want to help teach coding, support programs, and grow with a nonprofit building the next
-            generation of tech talent? Apply to intern with Prometheus.
+          <p className="section-lead internship-intro">
+            Apply to intern with Prometheus and help expand free tech education for youth.
           </p>
           <div className="internship-actions">
             <a

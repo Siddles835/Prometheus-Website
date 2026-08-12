@@ -1,16 +1,29 @@
 import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { REGISTER_URL, navLinks } from "../data/site";
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
+  const [scrolled, setScrolled] = useState(!isHome);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16);
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (!isHome) {
+        setScrolled(true);
+        return;
+      }
+      setScrolled(window.scrollY > 16);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [isHome]);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -25,12 +38,12 @@ export default function Header() {
 
   return (
     <header
-      className={`site-header${scrolled ? " is-scrolled" : ""}${open ? " nav-open" : ""}`}
+      className={`site-header${scrolled || !isHome ? " is-scrolled" : ""}${open ? " nav-open" : ""}`}
       id="site-header"
     >
       <div className="nav-shell">
         <div className="nav-inner">
-          <a className="brand" href="#top" aria-label="Prometheus home" onClick={closeMenu}>
+          <Link className="brand" to="/" aria-label="Prometheus home" onClick={closeMenu}>
             <img
               className="brand-mark"
               src="/assets/brand/prometheus-hero-badge.png"
@@ -38,10 +51,8 @@ export default function Header() {
               width="40"
               height="40"
             />
-            <span>
-              PROMETHEUS
-            </span>
-          </a>
+            <span>PROMETHEUS</span>
+          </Link>
           <button
             className="nav-toggle"
             id="nav-toggle"
@@ -54,10 +65,14 @@ export default function Header() {
           </button>
           <ul className="nav-links" id="nav-menu">
             {navLinks.map((link) => (
-              <li key={link.href}>
-                <a href={link.href} onClick={closeMenu}>
+              <li key={link.to}>
+                <NavLink
+                  to={link.to}
+                  onClick={closeMenu}
+                  className={({ isActive }) => (isActive ? "is-active" : undefined)}
+                >
                   {link.label}
-                </a>
+                </NavLink>
               </li>
             ))}
             <li>

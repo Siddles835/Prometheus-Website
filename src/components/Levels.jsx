@@ -2,15 +2,8 @@ import { levels } from "../data/site";
 
 export default function Levels() {
   return (
-    <section id="levels">
+    <section className="levels-page-section">
       <div className="container">
-        <div className="section-head reveal">
-          <p className="section-label">Learning path</p>
-          <h2 className="section-title">Join our classes</h2>
-          <p className="section-lead">
-            A clear path from Basic Python to Advanced Python and Machine Learning.
-          </p>
-        </div>
         <div className="levels-grid">
           {levels.map((level) => (
             <article className="level reveal" key={level.num}>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CONTACT_EMAIL, INTERNSHIP_URL, REGISTER_URL, navLinks } from "../data/site";
 
 export default function Footer() {
@@ -26,9 +27,12 @@ export default function Footer() {
         <div className="footer-col">
           <h3>Quick links</h3>
           <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
             {navLinks.map((link) => (
-              <li key={link.href}>
-                <a href={link.href}>{link.label}</a>
+              <li key={link.to}>
+                <Link to={link.to}>{link.label}</Link>
               </li>
             ))}
             <li>

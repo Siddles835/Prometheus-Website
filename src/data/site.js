@@ -4,11 +4,11 @@ export const INTERNSHIP_URL =
 export const CONTACT_EMAIL = "prometheuscompsci@gmail.com";
 
 export const navLinks = [
-  { href: "#why", label: "Why Prometheus" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#levels", label: "Levels" },
-  { href: "#internships", label: "Internships" },
-  { href: "#testimonials", label: "Testimonials" },
+  { to: "/why", label: "Why Prometheus" },
+  { to: "/gallery", label: "Gallery" },
+  { to: "/levels", label: "Levels" },
+  { to: "/internships", label: "Internships" },
+  { to: "/testimonials", label: "Testimonials" },
 ];
 
 export const stats = [
