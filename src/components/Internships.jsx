@@ -13,7 +13,7 @@ export default function Internships() {
           </p>
           <div className="internship-actions">
             <a
-              className="btn btn-dark"
+              className="btn btn-primary"
               href={INTERNSHIP_URL}
               target="_blank"
               rel="noopener noreferrer"

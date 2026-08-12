@@ -3,7 +3,6 @@ import FinalCta from "./components/FinalCta";
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Impact from "./components/Impact";
 import Internships from "./components/Internships";
 import Levels from "./components/Levels";
 import Sponsors from "./components/Sponsors";
@@ -20,7 +19,6 @@ export default function App() {
       <Header />
       <main id="top">
         <Hero />
-        <Impact />
         <Sponsors />
         <Why />
         <Gallery />

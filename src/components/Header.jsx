@@ -6,7 +6,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
+    const onScroll = () => setScrolled(window.scrollY > 16);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -28,47 +28,51 @@ export default function Header() {
       className={`site-header${scrolled ? " is-scrolled" : ""}${open ? " nav-open" : ""}`}
       id="site-header"
     >
-      <div className="nav-inner">
-        <a className="brand" href="#top" aria-label="Prometheus home" onClick={closeMenu}>
-          <img
-            className="brand-mark"
-            src="/assets/brand/prometheus-hero-badge.png"
-            alt="Prometheus"
-            width="44"
-            height="44"
-          />
-          <span>PROMETHEUS</span>
-        </a>
-        <button
-          className="nav-toggle"
-          id="nav-toggle"
-          aria-expanded={open}
-          aria-controls="nav-menu"
-          aria-label={open ? "Close menu" : "Open menu"}
-          onClick={() => setOpen((v) => !v)}
-        >
-          <span className="nav-toggle-bars" aria-hidden="true" />
-        </button>
-        <ul className="nav-links" id="nav-menu">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a href={link.href} onClick={closeMenu}>
-                {link.label}
+      <div className="nav-shell">
+        <div className="nav-inner">
+          <a className="brand" href="#top" aria-label="Prometheus home" onClick={closeMenu}>
+            <img
+              className="brand-mark"
+              src="/assets/brand/prometheus-hero-badge.png"
+              alt="Prometheus"
+              width="40"
+              height="40"
+            />
+            <span>
+              PROMETHEUS
+            </span>
+          </a>
+          <button
+            className="nav-toggle"
+            id="nav-toggle"
+            aria-expanded={open}
+            aria-controls="nav-menu"
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span className="nav-toggle-bars" aria-hidden="true" />
+          </button>
+          <ul className="nav-links" id="nav-menu">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} onClick={closeMenu}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+            <li>
+              <a
+                className="nav-cta"
+                href={REGISTER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMenu}
+              >
+                Register
               </a>
             </li>
-          ))}
-          <li>
-            <a
-              className="nav-cta"
-              href={REGISTER_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-            >
-              Register
-            </a>
-          </li>
-        </ul>
+          </ul>
+        </div>
       </div>
     </header>
   );

@@ -1,27 +1,62 @@
-import { CONTACT_EMAIL } from "../data/site";
+import { CONTACT_EMAIL, INTERNSHIP_URL, REGISTER_URL, navLinks } from "../data/site";
 
 export default function Footer() {
   return (
     <footer className="site-footer">
-      <div className="container footer-inner">
-        <div className="footer-brand">
-          <img
-            src="/assets/brand/prometheus-hero-badge.png"
-            alt="Prometheus"
-            width="48"
-            height="48"
-          />
-          <div>
+      <div className="container footer-grid">
+        <div className="footer-brand-block">
+          <div className="footer-brand">
+            <img
+              src="/assets/brand/prometheus-hero-badge.png"
+              alt="Prometheus"
+              width="52"
+              height="52"
+            />
             <span>PROMETHEUS</span>
-            <p>Empowering students through code.</p>
           </div>
-        </div>
-        <div className="footer-meta">
           <p>
-            Contact us at <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            Free Python and AI education for youth innovators — project-first classes, live
+            guidance, and a community built to grow.
           </p>
-          <p>© 2026 Prometheus.</p>
+          <a className="footer-link" href={`mailto:${CONTACT_EMAIL}`}>
+            Contact us today
+          </a>
         </div>
+
+        <div className="footer-col">
+          <h3>Quick links</h3>
+          <ul>
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
+            <li>
+              <a href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
+                Register
+              </a>
+            </li>
+            <li>
+              <a href={INTERNSHIP_URL} target="_blank" rel="noopener noreferrer">
+                Apply to intern
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            </li>
+            <li>Free classes for students</li>
+            <li>Hackathons, mentoring, and community</li>
+          </ul>
+        </div>
+      </div>
+      <div className="container footer-bottom">
+        <p>© 2026 Prometheus. Empowering students through code.</p>
       </div>
     </footer>
   );
