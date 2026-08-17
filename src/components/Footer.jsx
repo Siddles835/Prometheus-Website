@@ -1,10 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  CONTACT_EMAIL,
-  INTERNSHIP_URL,
-  REGISTER_URL,
-  footerLinks,
-} from "../data/site";
+import { CONTACT_EMAIL, INTERNSHIP_URL, footerLinks } from "../data/site";
 
 export default function Footer() {
   return (
@@ -38,11 +33,6 @@ export default function Footer() {
                 <Link to={link.to}>{link.label}</Link>
               </li>
             ))}
-            <li>
-              <a href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
-                Register for Prometheus classes
-              </a>
-            </li>
             <li>
               <a href={INTERNSHIP_URL} target="_blank" rel="noopener noreferrer">
                 Apply to intern at Prometheus

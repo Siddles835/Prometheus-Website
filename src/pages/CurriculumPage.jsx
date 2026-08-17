@@ -41,7 +41,7 @@ export default function CurriculumPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Register for the curriculum
+                Apply to intern
               </a>
               <Link className="btn btn-dark" to="/about">
                 About Prometheus

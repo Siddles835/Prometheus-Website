@@ -1,6 +1,7 @@
-export const REGISTER_URL = "https://forms.gle/Cc2eyXE55KyKgbbx9";
 export const INTERNSHIP_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog";
+// Main signup CTA uses the internship form (June code camp form retired).
+export const REGISTER_URL = INTERNSHIP_URL;
 export const CONTACT_EMAIL = "prometheuscompsci@gmail.com";
 export const SITE_URL = "https://prometheuscoding.org";
 

@@ -5,7 +5,7 @@ const facts = ["Free for students", "Live mentors", "Project-first path"];
 
 export default function FinalCta() {
   return (
-    <section className="final-cta" aria-label="Register">
+    <section className="final-cta" aria-label="Apply to intern">
       <div className="container">
         <div className="cta-panel reveal">
           <div className="cta-art" aria-hidden="true">
@@ -39,7 +39,7 @@ export default function FinalCta() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Register now
+              Apply to intern
             </a>
             <a className="btn btn-ghost" href={`mailto:${CONTACT_EMAIL}`}>
               Contact us
