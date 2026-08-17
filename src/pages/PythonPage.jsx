@@ -53,7 +53,7 @@ export default function PythonPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Apply to intern
+                Register for Python classes
               </a>
               <Link className="btn btn-dark" to="/curriculum">
                 Explore the Prometheus Coding Curriculum

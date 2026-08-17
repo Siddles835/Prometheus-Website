@@ -22,8 +22,7 @@ app.get("/api/site", (_req, res) => {
   res.json({
     name: "Prometheus",
     contact: "prometheuscompsci@gmail.com",
-    registerUrl:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog",
+    registerUrl: "https://tinyurl.com/aug-speed",
     internshipUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog",
   });

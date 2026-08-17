@@ -38,7 +38,7 @@ export default function Testimonials() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Apply to intern
+                  Register now
                 </a>
                 <Link className="btn btn-dark" to="/curriculum">
                   View curriculum

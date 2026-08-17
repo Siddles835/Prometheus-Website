@@ -83,7 +83,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 onClick={closeMenu}
               >
-                Apply to intern
+                Register
               </a>
             </li>
           </ul>

@@ -41,7 +41,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Apply to intern
+              Register now
             </a>
           </div>
         </div>

@@ -47,7 +47,7 @@ export default function AboutPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Apply to intern
+                Register for classes
               </a>
             </div>
           </div>
