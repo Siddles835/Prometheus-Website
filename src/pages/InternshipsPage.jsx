@@ -1,10 +1,16 @@
 import BannerAside from "../components/BannerAside";
 import Internships from "../components/Internships";
 import PageBanner from "../components/PageBanner";
+import Seo from "../components/Seo";
 
 export default function InternshipsPage() {
   return (
     <>
+      <Seo
+        title="Internships | Prometheus"
+        description="Intern at Prometheus and help expand coding and computer science education for youth."
+        path="/internships"
+      />
       <PageBanner
         label="Internships"
         title="Intern at Prometheus"

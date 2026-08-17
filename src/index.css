@@ -330,16 +330,29 @@ button,
 }
 
 .hero h1 {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.45rem;
   max-width: 14ch;
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(2.25rem, 5vw, 3.7rem);
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
   line-height: 0.98;
   letter-spacing: -0.04em;
   opacity: 0;
   transform: translateY(20px);
   animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.22s forwards;
+}
+
+.hero-tagline {
+  margin: 0 0 0.9rem;
+  max-width: 28rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  opacity: 0;
+  transform: translateY(18px);
+  animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
 }
 
 .hero-copy {
@@ -507,6 +520,219 @@ section {
   padding: 3.5rem 0;
   background: var(--white);
   border-bottom: 1px solid var(--line);
+}
+
+/* Brand intro (home SEO) */
+.brand-intro {
+  background: var(--white);
+}
+
+.brand-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.75fr);
+  gap: 2.5rem 3rem;
+  align-items: start;
+}
+
+.brand-intro-links {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1.6rem;
+}
+
+.brand-intro-links a {
+  color: var(--blue);
+  font-weight: 650;
+}
+
+.brand-intro-links a:hover {
+  color: var(--blue-bright);
+}
+
+.brand-intro-panel {
+  padding: 1.4rem 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+}
+
+.brand-intro-panel .banner-aside-label {
+  color: var(--blue);
+}
+
+.brand-intro-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.brand-intro-panel li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-weight: 550;
+}
+
+.brand-intro-panel li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--blue);
+}
+
+/* SEO content pages */
+.seo-page {
+  background: var(--paper);
+}
+
+.seo-page--tight {
+  padding-bottom: 2rem;
+}
+
+.seo-page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.75fr);
+  gap: 2.5rem 3rem;
+  align-items: start;
+}
+
+.seo-prose {
+  display: grid;
+  gap: 1.8rem;
+}
+
+.seo-prose--wide {
+  max-width: 48rem;
+}
+
+.seo-prose h2 {
+  margin: 0 0 0.7rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+.seo-prose p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.seo-prose a {
+  color: var(--blue);
+  font-weight: 650;
+}
+
+.seo-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.4rem;
+}
+
+.seo-side {
+  padding: 1.4rem 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.seo-side .banner-aside-label {
+  color: var(--blue);
+}
+
+.seo-side-list {
+  list-style: none;
+  margin: 0 0 1.2rem;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.seo-side-list li {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.seo-side-list strong {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.seo-side-list span,
+.seo-side-note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.seo-side-note {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.seo-side-note a {
+  color: var(--blue);
+  font-weight: 650;
+}
+
+.seo-level-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.seo-level-list li {
+  display: grid;
+  gap: 0.3rem;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.seo-level-list li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.seo-level-list strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 750;
+}
+
+.seo-level-list span {
+  color: var(--muted);
+}
+
+.seo-topic-cloud {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.seo-topic-cloud li {
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  font-weight: 550;
 }
 
 .sponsors-inner {
@@ -1794,7 +2020,9 @@ section {
   .pathways-grid,
   .pathways-head,
   .page-banner-layout.has-aside,
-  .internship-facts {
+  .internship-facts,
+  .brand-intro-grid,
+  .seo-page-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1941,6 +2169,7 @@ section {
   .reveal,
   .hero-logo,
   .hero h1,
+  .hero-tagline,
   .hero-copy,
   .hero-actions {
     opacity: 1;

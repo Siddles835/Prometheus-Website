@@ -1,28 +1,31 @@
 import { Link } from "react-router-dom";
-import { IconLive, IconMentor, IconMl } from "./icons/Icons";
+import { IconCode, IconLive, IconMl } from "./icons/Icons";
 import PathRail from "./PathRail";
 
 const pathways = [
   {
-    to: "/why",
-    label: "Why Prometheus",
-    title: "Structure with real support",
-    body: "Live guidance, professional instructors, and a project-first path.",
+    to: "/about",
+    label: "About Prometheus",
+    title: "Coding education with a clear mission",
+    body: "Learn who Prometheus is and how we help students build real computer science skills.",
     Icon: IconLive,
+    linkText: "About Prometheus",
   },
   {
-    to: "/levels",
-    label: "Learning path",
-    title: "From Python to ML",
-    body: "Basic Python, Advanced Python, and Machine Learning — step by step.",
+    to: "/curriculum",
+    label: "Curriculum",
+    title: "A structured coding curriculum",
+    body: "Follow the Prometheus path from Basic Python to Advanced Python and Machine Learning.",
     Icon: IconMl,
+    linkText: "Explore the Prometheus Coding Curriculum",
   },
   {
-    to: "/internships",
-    label: "Internships",
-    title: "Grow by giving back",
-    body: "Teach, mentor, and help expand free tech education for youth.",
-    Icon: IconMentor,
+    to: "/python",
+    label: "Python",
+    title: "Learn Python with Prometheus",
+    body: "Coding classes focused on Python programming — from fundamentals to applied projects.",
+    Icon: IconCode,
+    linkText: "Python Programming with Prometheus",
   },
 ];
 
@@ -32,11 +35,11 @@ export default function HomePathways() {
       <div className="container">
         <div className="section-head pathways-head reveal">
           <div>
-            <p className="section-label">Explore</p>
-            <h2 className="section-title">Built for ambitious learners</h2>
+            <p className="section-label">Explore Prometheus</p>
+            <h2 className="section-title">Coding education for ambitious learners</h2>
             <p className="section-lead">
-              Dive into the experience, curriculum, and ways to contribute — each path designed to
-              help students grow with confidence.
+              Prometheus Coding Education connects computer science learning with practical
+              programming — so students can learn Python, build projects, and grow with confidence.
             </p>
           </div>
           <div className="pathways-rail-panel">
@@ -46,7 +49,7 @@ export default function HomePathways() {
         </div>
 
         <div className="pathways-grid">
-          {pathways.map(({ to, label, title, body, Icon }) => (
+          {pathways.map(({ to, label, title, body, Icon, linkText }) => (
             <Link key={to} to={to} className="pathway-tile reveal">
               <span className="graphic-icon" aria-hidden="true">
                 <Icon />
@@ -54,7 +57,7 @@ export default function HomePathways() {
               <span className="pathway-label">{label}</span>
               <h3>{title}</h3>
               <p>{body}</p>
-              <span className="pathway-link">Explore</span>
+              <span className="pathway-link">{linkText}</span>
             </Link>
           ))}
         </div>

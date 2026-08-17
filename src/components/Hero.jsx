@@ -24,16 +24,16 @@ export default function Hero() {
             width="180"
             height="180"
           />
-          <h1>Build the future at Prometheus.</h1>
+          <h1>Prometheus</h1>
+          <p className="hero-tagline">Coding &amp; Computer Science Education</p>
           <p className="hero-copy">
-            Join hundreds of youth innovators shaping the next wave of technology. Participate in
-            impactful hackathons to showcase talent and join our classes to learn Python and AI with
-            live guidance from industry professionals. Our project-first curriculum empowers students
-            to build real-world skills and confidence in coding.
+            Prometheus helps students learn Python, programming, and computer science through a
+            project-first coding curriculum, live guidance from industry professionals, and
+            opportunities to grow with hackathons and mentorship.
           </p>
           <div className="hero-actions">
-            <Link className="btn btn-light" to="/levels">
-              View learning path
+            <Link className="btn btn-light" to="/curriculum">
+              Explore curriculum
             </Link>
             <a
               className="btn btn-primary"

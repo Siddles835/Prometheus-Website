@@ -21,10 +21,10 @@ export default function FinalCta() {
             height="88"
           />
           <div className="cta-copy">
-            <h2>Ready to start building?</h2>
+            <h2>Ready to learn with Prometheus?</h2>
             <p>
-              Join free Python classes, learn with live guidance, and grow alongside a community of
-              young innovators.
+              Join Prometheus coding classes to learn Python, programming, and computer science with
+              live guidance and a project-first curriculum.
             </p>
             <ul className="cta-facts" aria-label="Program highlights">
               {facts.map((fact) => (

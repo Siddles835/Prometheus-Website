@@ -40,8 +40,8 @@ export default function Testimonials() {
                 >
                   Register now
                 </a>
-                <Link className="btn btn-dark" to="/levels">
-                  View levels
+                <Link className="btn btn-dark" to="/curriculum">
+                  View curriculum
                 </Link>
               </div>
             </aside>

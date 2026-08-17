@@ -2,11 +2,24 @@ export const REGISTER_URL = "https://forms.gle/Cc2eyXE55KyKgbbx9";
 export const INTERNSHIP_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog";
 export const CONTACT_EMAIL = "prometheuscompsci@gmail.com";
+export const SITE_URL = "https://prometheuscoding.org";
 
 export const navLinks = [
+  { to: "/about", label: "About" },
+  { to: "/curriculum", label: "Curriculum" },
+  { to: "/python", label: "Python" },
+  { to: "/gallery", label: "Gallery" },
+  { to: "/internships", label: "Internships" },
+  { to: "/testimonials", label: "Testimonials" },
+];
+
+export const footerLinks = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About Prometheus" },
+  { to: "/curriculum", label: "Prometheus Coding Curriculum" },
+  { to: "/python", label: "Python Programming with Prometheus" },
   { to: "/why", label: "Why Prometheus" },
   { to: "/gallery", label: "Gallery" },
-  { to: "/levels", label: "Levels" },
   { to: "/internships", label: "Internships" },
   { to: "/testimonials", label: "Testimonials" },
 ];
@@ -134,5 +147,35 @@ export const testimonials = [
   {
     quote: "I learned how to code some python with zero previous experience.",
     attribution: "Ishan Mani (Python L1)",
+  },
+];
+
+export const aboutSections = [
+  {
+    title: "Who Prometheus is",
+    body: "Prometheus is a coding and computer science education organization focused on helping students develop programming skills through structured curriculum, projects, and learning opportunities.",
+  },
+  {
+    title: "What Prometheus teaches",
+    body: "Students learn Python, programming fundamentals, and computer science concepts through live classes taught by professionals. The path continues into advanced Python and machine learning projects.",
+  },
+  {
+    title: "Who it is for",
+    body: "Prometheus serves youth and students who want practical coding classes, a clear curriculum, and mentorship that builds confidence beyond theory.",
+  },
+];
+
+export const pythonHighlights = [
+  {
+    title: "Learn Python from the ground up",
+    body: "Start with variables, data types, strings, numbers, and input/output — the building blocks of programming.",
+  },
+  {
+    title: "Write real programs",
+    body: "Move into conditionals, loops, functions, data structures, and error handling with guided practice.",
+  },
+  {
+    title: "Apply Python to AI projects",
+    body: "Use Python for machine learning concepts, model training, evaluation, and portfolio-ready projects.",
   },
 ];
