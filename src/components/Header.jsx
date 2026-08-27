@@ -36,6 +36,13 @@ export default function Header() {
 
   const closeMenu = () => setOpen(false);
 
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <header
       className={`site-header${scrolled || !isHome ? " is-scrolled" : ""}${open ? " nav-open" : ""}`}
