@@ -3,6 +3,7 @@ import Layout from "./components/layout/Layout";
 import AboutPage from "./pages/AboutPage";
 import CurriculumPage from "./pages/CurriculumPage";
 import GalleryPage from "./pages/GalleryPage";
+import HackathonPage from "./pages/HackathonPage";
 import Home from "./pages/Home";
 import InternshipsPage from "./pages/InternshipsPage";
 import NotFound from "./pages/NotFound";
@@ -16,6 +17,7 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="hackathon" element={<HackathonPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="curriculum" element={<CurriculumPage />} />
           <Route path="python" element={<PythonPage />} />

@@ -25,6 +25,7 @@ app.get("/api/site", (_req, res) => {
     registerUrl: "https://tinyurl.com/aug-speed",
     internshipUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog",
+    hackathonUrl: "https://prometheus-aug-ml-hackathon.devpost.com/",
   });
 });
 
