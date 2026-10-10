@@ -2,7 +2,12 @@ export const INTERNSHIP_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog";
 export const REGISTER_URL = "https://tinyurl.com/aug-speed";
 export const HACKATHON_URL = "https://prometheus-aug-ml-hackathon.devpost.com/";
-export const CONTACT_EMAIL = "prometheuscompsci@gmail.com";
+export const contacts = [
+  { name: "Sidhaanth Kapoor", email: "sidhaanthkapoor@gmail.com" },
+  { name: "Sreejith Sreekumar", email: "srjsreek@gmail.com" },
+];
+export const CONTACT_EMAIL = contacts[0].email;
+export const CONTACT_MAILTO = contacts.map((c) => c.email).join(",");
 export const SITE_URL = "https://prometheuscoding.org";
 
 export const navLinks = [

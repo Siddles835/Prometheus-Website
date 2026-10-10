@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
-import { CONTACT_EMAIL, HACKATHON_URL, INTERNSHIP_URL, REGISTER_URL, footerLinks } from "../data/site";
+import {
+  HACKATHON_URL,
+  INTERNSHIP_URL,
+  REGISTER_URL,
+  contacts,
+  footerLinks,
+} from "../data/site";
 
 export default function Footer() {
   return (
-    <footer className="site-footer">
+    <footer className="site-footer" id="contact">
       <div className="container footer-grid">
         <div className="footer-brand-block">
           <div className="footer-brand">
@@ -20,9 +26,6 @@ export default function Footer() {
             learn Python, programming, and computer science through project-first classes and live
             guidance.
           </p>
-          <a className="footer-link" href={`mailto:${CONTACT_EMAIL}`}>
-            Contact Prometheus
-          </a>
         </div>
 
         <div className="footer-col">
@@ -53,12 +56,13 @@ export default function Footer() {
 
         <div className="footer-col">
           <h3>Contact</h3>
-          <ul>
-            <li>
-              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-            </li>
-            <li>Coding classes for students</li>
-            <li>Python, computer science, and community</li>
+          <ul className="footer-contacts">
+            {contacts.map((person) => (
+              <li key={person.email}>
+                <span className="footer-contact-name">Contact {person.name}</span>
+                <a href={`mailto:${person.email}`}>{person.email}</a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

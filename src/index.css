@@ -2090,6 +2090,49 @@ section {
   color: #fff;
 }
 
+.footer-contacts {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer-contacts li {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.footer-contact-name {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 650;
+}
+
+.footer-contacts a {
+  color: var(--blue-soft);
+  word-break: break-word;
+}
+
+.footer-contacts a:hover {
+  color: #fff;
+}
+
+.cta-contact-line {
+  margin: 0.9rem 0 0 !important;
+  max-width: 36rem;
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.cta-contact-line a {
+  color: #fff;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.cta-contact-line a:hover {
+  color: #eaf0ff;
+}
+
 .footer-bottom {
   padding-top: 1.4rem;
 }

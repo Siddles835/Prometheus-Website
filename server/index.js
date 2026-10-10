@@ -21,7 +21,10 @@ app.get("/api/health", (_req, res) => {
 app.get("/api/site", (_req, res) => {
   res.json({
     name: "Prometheus",
-    contact: "prometheuscompsci@gmail.com",
+    contacts: [
+      { name: "Sidhaanth Kapoor", email: "sidhaanthkapoor@gmail.com" },
+      { name: "Sreejith Sreekumar", email: "srjsreek@gmail.com" },
+    ],
     registerUrl: "https://tinyurl.com/aug-speed",
     internshipUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog",

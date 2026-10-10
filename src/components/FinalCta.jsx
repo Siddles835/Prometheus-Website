@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, REGISTER_URL } from "../data/site";
+import { CONTACT_MAILTO, REGISTER_URL, contacts } from "../data/site";
 import { FlameMark, OrbitGraphic } from "./icons/Icons";
 
 const facts = ["Free for students", "Live mentors", "Project-first path"];
@@ -26,6 +26,12 @@ export default function FinalCta() {
               Join Prometheus coding classes to learn Python, programming, and computer science with
               live guidance and a project-first curriculum.
             </p>
+            <p className="cta-contact-line">
+              Contact {contacts[0].name} at{" "}
+              <a href={`mailto:${contacts[0].email}`}>{contacts[0].email}</a> and{" "}
+              {contacts[1].name} at{" "}
+              <a href={`mailto:${contacts[1].email}`}>{contacts[1].email}</a>.
+            </p>
             <ul className="cta-facts" aria-label="Program highlights">
               {facts.map((fact) => (
                 <li key={fact}>{fact}</li>
@@ -41,7 +47,7 @@ export default function FinalCta() {
             >
               Register now
             </a>
-            <a className="btn btn-ghost" href={`mailto:${CONTACT_EMAIL}`}>
+            <a className="btn btn-ghost" href={`mailto:${CONTACT_MAILTO}`}>
               Contact us
             </a>
           </div>
