@@ -41,16 +41,6 @@ export default function HackathonHighlight() {
                     <li key={tag}>{tag}</li>
                   ))}
                 </ul>
-                {event.href ? (
-                  <a
-                    className="pathway-link"
-                    href={event.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {event.hrefLabel || "View event"}
-                  </a>
-                ) : null}
               </article>
             </li>
           ))}

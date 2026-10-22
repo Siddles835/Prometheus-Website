@@ -46,8 +46,6 @@ export const pastHackathons = [
     summary:
       "Students built innovative AI and machine learning projects in a hybrid format — experimenting, collaborating, and bringing ideas to life.",
     tags: ["AI", "Machine Learning", "Hybrid"],
-    href: "https://prometheus-aug-ml-hackathon.devpost.com/",
-    hrefLabel: "View on Devpost",
   },
   {
     id: "july-ai-2026",
@@ -56,8 +54,6 @@ export const pastHackathons = [
     summary:
       "An online AI challenge that brought together the next generation of innovators to design, code, and demo working prototypes.",
     tags: ["AI", "Online", "Prototypes"],
-    href: "https://prometheus-july-ai-challenge.devpost.com/",
-    hrefLabel: "View on Devpost",
   },
 ];
 
