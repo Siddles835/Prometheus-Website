@@ -1,11 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  HACKATHON_URL,
-  INTERNSHIP_URL,
-  REGISTER_URL,
-  contacts,
-  footerLinks,
-} from "../data/site";
+import { INTERNSHIP_URL, REGISTER_URL, contacts, footerLinks } from "../data/site";
 
 export default function Footer() {
   return (
@@ -39,11 +33,6 @@ export default function Footer() {
             <li>
               <a href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
                 Register for Prometheus classes
-              </a>
-            </li>
-            <li>
-              <a href={HACKATHON_URL} target="_blank" rel="noopener noreferrer">
-                Register for the AI &amp; ML Hackathon on Devpost
               </a>
             </li>
             <li>

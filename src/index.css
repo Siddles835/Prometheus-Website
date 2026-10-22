@@ -1101,44 +1101,18 @@ section {
     var(--paper);
 }
 
-/* Hackathon highlight */
-.hackathon-highlight {
+/* Hackathon timeline */
+.hackathon-highlight,
+.hackathons-page {
   background: var(--white);
+}
+
+.hackathon-highlight {
   border-block: 1px solid var(--line);
 }
 
-.hackathon-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.85fr);
-  gap: 2rem 2.5rem;
-  align-items: start;
-  padding: 2.2rem 2rem;
-  border: 1px solid var(--line);
-  border-radius: 28px;
-  background:
-    radial-gradient(520px 240px at 0% 0%, rgba(31, 94, 255, 0.08), transparent 55%),
-    var(--paper);
-  box-shadow: var(--shadow-soft);
-}
-
-.hackathon-copy .section-title {
-  max-width: 16ch;
-}
-
-.hackathon-name {
-  margin: 0 0 1rem;
-  font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
-  font-weight: 750;
-  letter-spacing: -0.02em;
-  color: var(--blue);
-}
-
-.hackathon-body {
-  margin: 0 0 1.5rem;
-  max-width: 38rem;
-  color: var(--muted);
-  font-size: 1.05rem;
+.hackathon-highlight .hackathon-actions {
+  margin-top: 1.5rem;
 }
 
 .hackathon-actions {
@@ -1147,7 +1121,36 @@ section {
   gap: 0.75rem;
 }
 
-.hackathon-points {
+.hackathon-prize-panel {
+  padding: 1.4rem 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+}
+
+.hackathon-prize-panel .banner-aside-label {
+  color: var(--blue);
+}
+
+.hackathon-prize-panel strong {
+  display: block;
+  margin: 0.2rem 0 0.45rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.hackathon-prize-panel span {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.hackathon-timeline {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1155,54 +1158,94 @@ section {
   gap: 0;
 }
 
-.hackathon-points li {
+.hackathon-timeline--preview {
+  margin-top: 0.5rem;
+}
+
+.hackathon-timeline-item {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.95rem;
-  align-items: start;
-  padding: 1.15rem 0;
+  grid-template-columns: 1.5rem 1fr;
+  gap: 1.1rem;
+  align-items: stretch;
 }
 
-.hackathon-points li + li {
-  border-top: 1px solid var(--line);
+.hackathon-timeline-marker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.35rem;
 }
 
-.hackathon-points .graphic-icon {
-  margin-bottom: 0;
-  margin-top: 0.1rem;
+.hackathon-timeline-dot {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background: var(--blue);
+  border: 3px solid rgba(31, 94, 255, 0.18);
+  box-shadow: 0 0 0 4px rgba(31, 94, 255, 0.08);
+  z-index: 1;
 }
 
-.hackathon-points h3 {
-  margin: 0 0 0.35rem;
+.hackathon-timeline-line {
+  position: absolute;
+  top: 1.2rem;
+  bottom: -0.15rem;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(31, 94, 255, 0.45), rgba(31, 94, 255, 0.08));
+}
+
+.hackathon-timeline-card {
+  margin: 0 0 1.35rem;
+  padding: 1.35rem 1.3rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--paper);
+}
+
+.hackathon-timeline-date {
+  margin: 0 0 0.45rem;
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.hackathon-timeline-card h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
   font-weight: 750;
   letter-spacing: -0.02em;
 }
 
-.hackathon-points p {
-  margin: 0;
+.hackathon-timeline-card p {
+  margin: 0 0 0.95rem;
   color: var(--muted);
 }
 
-.hackathon-side-list {
+.hackathon-timeline-tags {
   list-style: none;
-  margin: 0 0 1.2rem;
+  margin: 0 0 0.95rem;
   padding: 0;
-  display: grid;
-  gap: 0.85rem;
-}
-
-.hackathon-side-list li {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-weight: 550;
-  color: var(--ink-soft);
+  flex-wrap: wrap;
+  gap: 0.45rem;
 }
 
-.hackathon-side-list .graphic-icon {
-  margin-bottom: 0;
+.hackathon-timeline-tags li {
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  font-weight: 550;
+}
+
+.hackathons-page .seo-cta-row {
+  margin-top: 1.5rem;
 }
 
 .pathways-head {
@@ -2202,8 +2245,7 @@ section {
   .page-banner-layout.has-aside,
   .internship-facts,
   .brand-intro-grid,
-  .seo-page-grid,
-  .hackathon-panel {
+  .seo-page-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2249,6 +2291,10 @@ section {
   .hero-actions .btn,
   .hackathon-actions .btn {
     width: 100%;
+  }
+
+  .hackathon-timeline-card {
+    padding: 1.2rem 1.1rem;
   }
 
   .hero-inner {
@@ -2509,13 +2555,12 @@ section {
     gap: 1.15rem;
   }
 
-  .hackathon-panel {
-    padding: 1.4rem 1.15rem;
-    border-radius: 22px;
-  }
-
   .hackathon-actions {
     display: grid;
+  }
+
+  .hackathon-prize-panel {
+    padding: 1.15rem 1.05rem;
   }
 
   .cta-copy h2 {

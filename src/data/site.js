@@ -1,7 +1,6 @@
 export const INTERNSHIP_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog";
 export const REGISTER_URL = "https://tinyurl.com/aug-speed";
-export const HACKATHON_URL = "https://prometheus-aug-ml-hackathon.devpost.com/";
 export const contacts = [
   { name: "Sidhaanth Kapoor", email: "sidhaanthkapoor@gmail.com" },
   { name: "Sreejith Sreekumar", email: "srjsreek@gmail.com" },
@@ -11,7 +10,7 @@ export const CONTACT_MAILTO = contacts.map((c) => c.email).join(",");
 export const SITE_URL = "https://prometheuscoding.org";
 
 export const navLinks = [
-  { to: "/hackathon", label: "Hackathon" },
+  { to: "/hackathons", label: "Hackathons" },
   { to: "/about", label: "About" },
   { to: "/curriculum", label: "Curriculum" },
   { to: "/python", label: "Python" },
@@ -22,7 +21,7 @@ export const navLinks = [
 
 export const footerLinks = [
   { to: "/", label: "Home" },
-  { to: "/hackathon", label: "AI & Machine Learning Hackathon" },
+  { to: "/hackathons", label: "Past Hackathons" },
   { to: "/about", label: "About Prometheus" },
   { to: "/curriculum", label: "Prometheus Coding Curriculum" },
   { to: "/python", label: "Python Programming with Prometheus" },
@@ -32,30 +31,35 @@ export const footerLinks = [
   { to: "/testimonials", label: "Testimonials" },
 ];
 
-export const hackathon = {
-  eyebrow: "Upcoming event",
-  title: "Ready to build something awesome?",
-  name: "AI & Machine Learning Hybrid Hackathon",
-  summary:
-    "Prometheus CS is hosting an AI & Machine Learning Hybrid Hackathon, giving students the opportunity to put their coding skills to the test, create innovative projects, and learn along the way.",
-  body: "Whether you’re an experienced developer or just getting started, come build, experiment, and bring your ideas to life.",
-  highlights: [
-    {
-      title: "Build real projects",
-      body: "Put your coding skills to the test and create innovative AI and machine learning projects.",
-    },
-    {
-      title: "Learn as you go",
-      body: "Grow through experimentation, collaboration, and hands-on problem solving.",
-    },
-    {
-      title: "Open to all levels",
-      body: "Whether you are experienced or just getting started, there is a place for your ideas.",
-    },
-  ],
-  registerLabel: "Register & submit on Devpost",
-  detailsLabel: "Hackathon details",
+export const hackathonsIntro = {
+  eyebrow: "Past hackathons",
+  title: "Building through competition",
+  lead:
+    "Prometheus CS hosts hackathons where students put coding skills to the test, create innovative projects, and learn along the way — from AI and machine learning challenges to hands-on builds.",
 };
+
+export const pastHackathons = [
+  {
+    id: "aug-ml-2026",
+    date: "August 2026",
+    title: "AI & Machine Learning Hybrid Hackathon",
+    summary:
+      "Students built innovative AI and machine learning projects in a hybrid format — experimenting, collaborating, and bringing ideas to life.",
+    tags: ["AI", "Machine Learning", "Hybrid"],
+    href: "https://prometheus-aug-ml-hackathon.devpost.com/",
+    hrefLabel: "View on Devpost",
+  },
+  {
+    id: "july-ai-2026",
+    date: "July 2026",
+    title: "July AI Challenge",
+    summary:
+      "An online AI challenge that brought together the next generation of innovators to design, code, and demo working prototypes.",
+    tags: ["AI", "Online", "Prototypes"],
+    href: "https://prometheus-july-ai-challenge.devpost.com/",
+    hrefLabel: "View on Devpost",
+  },
+];
 
 export const stats = [
   { value: "1800+", label: "Students enrolled" },

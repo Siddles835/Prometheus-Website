@@ -17,7 +17,8 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="hackathon" element={<HackathonPage />} />
+          <Route path="hackathons" element={<HackathonPage />} />
+          <Route path="hackathon" element={<Navigate to="/hackathons" replace />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="curriculum" element={<CurriculumPage />} />
           <Route path="python" element={<PythonPage />} />

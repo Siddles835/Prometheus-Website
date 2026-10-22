@@ -1,52 +1,60 @@
 import { Link } from "react-router-dom";
-import { HACKATHON_URL, hackathon } from "../data/site";
-import { IconBuild, IconImpact, IconMl } from "./icons/Icons";
-
-const highlightIcons = [IconBuild, IconMl, IconImpact];
+import { hackathonsIntro, pastHackathons } from "../data/site";
 
 export default function HackathonHighlight() {
+  const preview = pastHackathons.slice(0, 3);
+
   return (
-    <section className="hackathon-highlight" aria-label="AI and Machine Learning Hackathon">
+    <section className="hackathon-highlight" aria-label="Past Prometheus hackathons">
       <div className="container">
-        <div className="hackathon-panel reveal">
-          <div className="hackathon-copy">
-            <p className="section-label">{hackathon.eyebrow}</p>
-            <h2 className="section-title">{hackathon.title}</h2>
-            <p className="hackathon-name">{hackathon.name}</p>
-            <p className="section-lead">{hackathon.summary}</p>
-            <p className="hackathon-body">{hackathon.body}</p>
+        <div className="section-head pathways-head reveal">
+          <div>
+            <p className="section-label">{hackathonsIntro.eyebrow}</p>
+            <h2 className="section-title">{hackathonsIntro.title}</h2>
+            <p className="section-lead">{hackathonsIntro.lead}</p>
             <div className="hackathon-actions">
-              <a
-                className="btn btn-primary"
-                href={HACKATHON_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {hackathon.registerLabel}
-              </a>
-              <Link className="btn btn-dark" to="/hackathon">
-                {hackathon.detailsLabel}
+              <Link className="btn btn-primary" to="/hackathons">
+                View hackathon timeline
               </Link>
             </div>
           </div>
-
-          <ul className="hackathon-points">
-            {hackathon.highlights.map((item, index) => {
-              const Icon = highlightIcons[index] || IconMl;
-              return (
-                <li key={item.title}>
-                  <span className="graphic-icon" aria-hidden="true">
-                    <Icon />
-                  </span>
-                  <div>
-                    <h3>{item.title}</h3>
-                    <p>{item.body}</p>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+          <aside className="hackathon-prize-panel" aria-label="Hackathon impact">
+            <p className="banner-aside-label">Impact so far</p>
+            <strong>$1700+</strong>
+            <span>In hackathon prizes awarded to student builders</span>
+          </aside>
         </div>
+
+        <ol className="hackathon-timeline hackathon-timeline--preview">
+          {preview.map((event, index) => (
+            <li className="hackathon-timeline-item reveal" key={event.id}>
+              <div className="hackathon-timeline-marker" aria-hidden="true">
+                <span className="hackathon-timeline-dot" />
+                {index < preview.length - 1 ? <span className="hackathon-timeline-line" /> : null}
+              </div>
+              <article className="hackathon-timeline-card">
+                <p className="hackathon-timeline-date">{event.date}</p>
+                <h3>{event.title}</h3>
+                <p>{event.summary}</p>
+                <ul className="hackathon-timeline-tags" aria-label="Topics">
+                  {event.tags.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
+                {event.href ? (
+                  <a
+                    className="pathway-link"
+                    href={event.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {event.hrefLabel || "View event"}
+                  </a>
+                ) : null}
+              </article>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );
