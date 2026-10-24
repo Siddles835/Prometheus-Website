@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { REGISTER_URL, stats } from "../data/site";
 
 export default function Hero() {
   return (
@@ -25,33 +24,20 @@ export default function Hero() {
             height="180"
           />
           <h1>Prometheus</h1>
-          <p className="hero-tagline">Coding &amp; Computer Science Education</p>
+          <p className="hero-tagline">Curriculum partnerships &amp; education outreach</p>
           <p className="hero-copy">
-            Prometheus helps students learn Python, programming, and computer science through a
-            project-first coding curriculum, live guidance from industry professionals, and
-            opportunities to grow with hackathons and mentorship.
+            Prometheus partners with organizations to design computer science curriculum and expand
+            educational outreach — helping schools, nonprofits, and programs strengthen CS
+            offerings through collaboration, frameworks, and shared events.
           </p>
           <div className="hero-actions">
             <Link className="btn btn-light" to="/curriculum">
-              Explore curriculum
+              See curriculum partnerships
             </Link>
-            <a
-              className="btn btn-primary"
-              href={REGISTER_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Register now
-            </a>
+            <Link className="btn btn-primary" to="/outreach">
+              Explore outreach
+            </Link>
           </div>
-        </div>
-        <div className="hero-stats" aria-label="Impact">
-          {stats.map((item) => (
-            <div className="hero-stat" key={item.label}>
-              <strong>{item.value}</strong>
-              <span>{item.label}</span>
-            </div>
-          ))}
         </div>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import BannerAside from "../components/BannerAside";
 import PageBanner from "../components/PageBanner";
 import Seo from "../components/Seo";
 import { hackathonsIntro, pastHackathons } from "../data/site";
@@ -9,23 +8,22 @@ export default function HackathonPage() {
     <>
       <Seo
         title="Past Hackathons | Prometheus"
-        description="Explore past Prometheus CS hackathons — AI, machine learning, and coding challenges where students built innovative projects."
+        description="Explore past Prometheus hackathons — AI, machine learning, and computer science challenges built through collaboration and shared progress."
         path="/hackathons"
       />
       <PageBanner
         label="Hackathons"
         title="Past Prometheus hackathons"
         lead={hackathonsIntro.lead}
-        aside={<BannerAside variant="stats" />}
       />
       <section className="hackathons-page">
         <div className="container">
           <div className="section-head reveal">
             <p className="section-label">Timeline</p>
-            <h2 className="section-title">Events that shaped our builders</h2>
+            <h2 className="section-title">Events that shape collaboration</h2>
             <p className="section-lead">
-              From hybrid ML builds to online AI challenges, these past hackathons gave students a
-              stage to experiment, collaborate, and ship real projects.
+              From hybrid ML builds to online AI challenges, these past hackathons created space for
+              experimentation, partnership, and shipping real projects.
             </p>
           </div>
 
@@ -54,10 +52,13 @@ export default function HackathonPage() {
 
           <div className="seo-cta-row reveal">
             <Link className="btn btn-primary" to="/curriculum">
-              Explore the Prometheus Coding Curriculum
+              Curriculum partnerships
             </Link>
             <Link className="btn btn-dark" to="/about">
               About Prometheus
+            </Link>
+            <Link className="btn btn-dark" to="/outreach">
+              Curriculum development &amp; outreach
             </Link>
           </div>
         </div>

@@ -1,6 +1,8 @@
-export const INTERNSHIP_URL =
+export const OUTREACH_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSfGwChpnERV5JcENuYXM2FbrT7XAHjSM11lCSkpnNKAlZbN3g/viewform?usp=dialog";
-export const REGISTER_URL = "https://tinyurl.com/aug-speed";
+/** @deprecated kept as alias for any remaining imports */
+export const INTERNSHIP_URL = OUTREACH_URL;
+
 export const contacts = [
   { name: "Sidhaanth Kapoor", email: "sidhaanthkapoor@gmail.com" },
   { name: "Sreejith Sreekumar", email: "srjsreek@gmail.com" },
@@ -10,32 +12,25 @@ export const CONTACT_MAILTO = contacts.map((c) => c.email).join(",");
 export const SITE_URL = "https://prometheuscoding.org";
 
 export const navLinks = [
-  { to: "/hackathons", label: "Hackathons" },
   { to: "/about", label: "About" },
   { to: "/curriculum", label: "Curriculum" },
-  { to: "/python", label: "Python" },
-  { to: "/gallery", label: "Gallery" },
-  { to: "/internships", label: "Internships" },
-  { to: "/testimonials", label: "Testimonials" },
+  { to: "/outreach", label: "Outreach" },
+  { to: "/hackathons", label: "Hackathons" },
 ];
 
 export const footerLinks = [
   { to: "/", label: "Home" },
-  { to: "/hackathons", label: "Past Hackathons" },
   { to: "/about", label: "About Prometheus" },
-  { to: "/curriculum", label: "Prometheus Coding Curriculum" },
-  { to: "/python", label: "Python Programming with Prometheus" },
-  { to: "/why", label: "Why Prometheus" },
-  { to: "/gallery", label: "Gallery" },
-  { to: "/internships", label: "Internships" },
-  { to: "/testimonials", label: "Testimonials" },
+  { to: "/curriculum", label: "Curriculum partnerships" },
+  { to: "/outreach", label: "Curriculum development & outreach" },
+  { to: "/hackathons", label: "Past Hackathons" },
 ];
 
 export const hackathonsIntro = {
   eyebrow: "Past hackathons",
-  title: "Building through competition",
+  title: "Building through collaboration",
   lead:
-    "Prometheus CS hosts hackathons where students put coding skills to the test, create innovative projects, and learn along the way — from AI and machine learning challenges to hands-on builds.",
+    "Prometheus hosts hackathons that bring builders together around AI, machine learning, and computer science challenges — creating space for experimentation and shared progress.",
 };
 
 export const pastHackathons = [
@@ -44,7 +39,7 @@ export const pastHackathons = [
     date: "August 2026",
     title: "AI & Machine Learning Hybrid Hackathon",
     summary:
-      "Students built innovative AI and machine learning projects in a hybrid format — experimenting, collaborating, and bringing ideas to life.",
+      "A hybrid format focused on innovative AI and machine learning projects — experimentation, collaboration, and shipping real ideas.",
     tags: ["AI", "Machine Learning", "Hybrid"],
   },
   {
@@ -52,15 +47,9 @@ export const pastHackathons = [
     date: "July 2026",
     title: "July AI Challenge",
     summary:
-      "An online AI challenge that brought together the next generation of innovators to design, code, and demo working prototypes.",
+      "An online AI challenge for innovators to design, code, and demo working prototypes.",
     tags: ["AI", "Online", "Prototypes"],
   },
-];
-
-export const stats = [
-  { value: "1800+", label: "Students enrolled" },
-  { value: "$1700", label: "In hackathon prizes" },
-  { value: "50+", label: "Recruited staff & trainees" },
 ];
 
 export const sponsors = [
@@ -87,128 +76,75 @@ export const sponsors = [
   },
 ];
 
-export const whyPoints = [
+/** Organizations Prometheus helps strengthen CS education for */
+export const partnerOrgs = [
   {
-    title: "Live guidance",
-    body: "Weekly sessions and coaching help students learn by building.",
+    name: "featherless.ai",
+    href: "https://featherless.ai/",
+    focus: "AI infrastructure & applied learning",
+    body: "Partnering to connect advanced AI tooling with curriculum and outreach that organizations can adopt and extend.",
   },
   {
-    title: "Professional IT workers teach classes",
-    body: "Learn from experienced professionals in the field.",
+    name: "RISE Research",
+    href: "https://www.riseresearch.org/",
+    focus: "Research-informed education",
+    body: "Collaborating on research-backed approaches that help education organizations deepen computer science programming.",
   },
   {
-    title: "Project-first, student-friendly path",
-    body: "Each level focuses on hands-on coding with real-world outcomes. Clear steps and simple explanations keep learners moving forward.",
-  },
-];
-
-export const gallery = [
-  {
-    src: "/assets/gallery/gallery-1.jpeg",
-    alt: "Prometheus live coding class",
-    caption: "Live coding",
-    className: "tall",
-    width: 1600,
-    height: 950,
-  },
-  {
-    src: "/assets/gallery/gallery-2.jpeg",
-    alt: "Prometheus classroom session",
-    caption: "Classroom session",
-    width: 1600,
-    height: 815,
-  },
-  {
-    src: "/assets/gallery/gallery-3.jpeg",
-    alt: "Prometheus students learning together",
-    caption: "Learning together",
-    width: 1600,
-    height: 1001,
-  },
-  {
-    src: "/assets/gallery/gallery-4.jpeg",
-    alt: "Prometheus student project work",
-    caption: "Project work",
-    className: "wide",
-    width: 1600,
-    height: 1013,
-  },
-];
-
-export const levels = [
-  {
-    num: "Level 01",
-    title: "Basic Python",
-    description: "Start your coding journey with variables, data types, and basic I/O.",
-    topics: ["Variables", "Data Types", "Input/Output", "Strings", "Numbers"],
-  },
-  {
-    num: "Level 02",
-    title: "Advanced Python",
-    description: "Learn to make decisions in code, write reusable functions, and work with complex data.",
-    topics: ["If/Else", "Loops", "Functions", "Data Structures", "Error Handling"],
-  },
-  {
-    num: "Level 03",
-    title: "Machine Learning",
-    description: "Build real AI projects and learn how to train models with Python.",
-    topics: ["AI Concepts", "Python for ML", "Training Models", "Projects", "Evaluation"],
-  },
-];
-
-export const internshipHighlights = [
-  {
-    title: "Teach and mentor",
-    body: "Support live classes, help students debug, and grow as an educator.",
-  },
-  {
-    title: "Build real programs",
-    body: "Contribute to curriculum, operations, and community initiatives.",
-  },
-  {
-    title: "Grow with impact",
-    body: "Join a mission-driven team expanding free tech education for youth.",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "My son liked the activities and learning about AI, ML, and DL. He liked the AI python project very much. Hasith is very confident with using Python to train AI and understands how you train AI models in Python. The instructors were professional, knowledgeable, and very patient. Having teachers with real experience in IT and AI made the lessons practical and engaging. They explained complex concepts in a way that was easy for students to understand.",
-    attribution: "Krishnaveni — Parent of Hasith (Python L3)",
-  },
-  {
-    quote: "I learned how to code some python with zero previous experience.",
-    attribution: "Ishan Mani (Python L1)",
+    name: "Flatlogic",
+    href: "https://flatlogic.com/",
+    focus: "Software & product pathways",
+    body: "Supporting organizations that need practical, product-oriented curriculum pathways for software and CS skill-building.",
   },
 ];
 
 export const aboutSections = [
   {
     title: "Who Prometheus is",
-    body: "Prometheus is a coding and computer science education organization focused on helping students develop programming skills through structured curriculum, projects, and learning opportunities.",
+    body: "Prometheus is a computer science curriculum and outreach organization. We partner with schools, nonprofits, and education programs to design, refine, and scale CS curriculum — so organizations can deliver stronger learning experiences without building everything from scratch.",
   },
   {
-    title: "What Prometheus teaches",
-    body: "Students learn Python, programming fundamentals, and computer science concepts through live classes taught by professionals. The path continues into advanced Python and machine learning projects.",
+    title: "How we work",
+    body: "We focus on curriculum architecture: clear progressions, project-based modules, and materials that organizations can adapt to their communities. Our outreach work helps partners launch and sustain CS programming with shared resources and collaboration.",
   },
   {
-    title: "Who it is for",
-    body: "Prometheus serves youth and students who want practical coding classes, a clear curriculum, and mentorship that builds confidence beyond theory.",
+    title: "Who we partner with",
+    body: "Prometheus works with education-focused organizations that want to enhance computer science offerings — from curriculum design and sequencing to outreach strategy and community programming like hackathons.",
   },
 ];
 
-export const pythonHighlights = [
+export const curriculumFocus = [
   {
-    title: "Learn Python from the ground up",
-    body: "Start with variables, data types, strings, numbers, and input/output — the building blocks of programming.",
+    title: "Curriculum design for organizations",
+    body: "Structured CS pathways and modules that partners can adopt, localize, and maintain — oriented around real projects and measurable progress.",
   },
   {
-    title: "Write real programs",
-    body: "Move into conditionals, loops, functions, data structures, and error handling with guided practice.",
+    title: "Enhancing existing programs",
+    body: "We help organizations strengthen what they already run: clearer sequencing, better project scaffolds, and materials that scale with their teams.",
   },
   {
-    title: "Apply Python to AI projects",
-    body: "Use Python for machine learning concepts, model training, evaluation, and portfolio-ready projects.",
+    title: "Shared standards, flexible delivery",
+    body: "Partners keep ownership of their programs. Prometheus provides curriculum frameworks and collaboration so delivery stays aligned with each organization’s mission.",
   },
+];
+
+export const outreachHighlights = [
+  {
+    title: "Curriculum development",
+    body: "Help design and refine CS curriculum modules, progressions, and project frameworks for partner organizations.",
+  },
+  {
+    title: "Organization outreach",
+    body: "Support outreach to schools, nonprofits, and education programs — building partnerships that expand access to strong CS curriculum.",
+  },
+  {
+    title: "Program operations",
+    body: "Contribute to coordination, documentation, and community initiatives that keep outreach and curriculum work moving.",
+  },
+];
+
+export const outreachRoles = [
+  "Curriculum development collaborators",
+  "Organization outreach leads",
+  "Partnership and program support",
 ];

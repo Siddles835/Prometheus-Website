@@ -2,30 +2,29 @@ import { Link } from "react-router-dom";
 
 export default function BrandIntro() {
   return (
-    <section className="brand-intro" aria-label="About Prometheus Coding">
+    <section className="brand-intro" aria-label="About Prometheus">
       <div className="container brand-intro-grid">
         <div className="reveal">
-          <p className="section-label">Prometheus Coding</p>
-          <h2 className="section-title">Computer science education that starts with building</h2>
+          <p className="section-label">Prometheus</p>
+          <h2 className="section-title">Curriculum built for organizations</h2>
           <p className="section-lead">
-            Prometheus is a coding education organization helping students learn Python,
-            programming, and computer science. Through live coding classes, a clear curriculum, and
-            hands-on projects, learners develop skills they can use in school, hackathons, and
-            beyond.
+            We work with education organizations to enhance computer science programming — from
+            curriculum design and sequencing to outreach that helps partners reach their
+            communities. Prometheus is a curriculum and outreach collaborator for organizations.
           </p>
           <div className="brand-intro-links">
             <Link to="/about">About Prometheus</Link>
-            <Link to="/curriculum">Explore the Prometheus Coding Curriculum</Link>
-            <Link to="/python">Python Programming with Prometheus</Link>
+            <Link to="/curriculum">Curriculum partnerships</Link>
+            <Link to="/outreach">Curriculum development &amp; outreach</Link>
           </div>
         </div>
         <aside className="brand-intro-panel reveal">
-          <p className="banner-aside-label">What students learn</p>
+          <p className="banner-aside-label">What we focus on</p>
           <ul>
-            <li>Python fundamentals and programming practice</li>
-            <li>Computer science concepts through projects</li>
-            <li>A coding curriculum from beginner to machine learning</li>
-            <li>Live mentorship in coding classes</li>
+            <li>CS curriculum frameworks for partner organizations</li>
+            <li>Outreach that grows sustainable education programs</li>
+            <li>Collaboration with research and technology partners</li>
+            <li>Community events like hackathons</li>
           </ul>
         </aside>
       </div>

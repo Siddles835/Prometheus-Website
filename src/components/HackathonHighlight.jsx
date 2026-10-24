@@ -18,10 +18,10 @@ export default function HackathonHighlight() {
               </Link>
             </div>
           </div>
-          <aside className="hackathon-prize-panel" aria-label="Hackathon impact">
-            <p className="banner-aside-label">Impact so far</p>
-            <strong>$1700+</strong>
-            <span>In hackathon prizes awarded to student builders</span>
+          <aside className="hackathon-prize-panel" aria-label="Hackathon focus">
+            <p className="banner-aside-label">Community programming</p>
+            <strong>Shared builds</strong>
+            <span>Hackathons that connect partners, builders, and CS collaboration</span>
           </aside>
         </div>
 

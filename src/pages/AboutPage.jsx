@@ -1,22 +1,20 @@
 import { Link } from "react-router-dom";
-import BannerAside from "../components/BannerAside";
 import PageBanner from "../components/PageBanner";
 import Seo from "../components/Seo";
-import { REGISTER_URL, aboutSections, stats } from "../data/site";
+import { OUTREACH_URL, aboutSections } from "../data/site";
 
 export default function AboutPage() {
   return (
     <>
       <Seo
         title="About Prometheus"
-        description="Prometheus is a coding and computer science education organization helping students learn Python, programming, and computer science through structured curriculum and projects."
+        description="Prometheus is a computer science curriculum and outreach organization that partners with schools, nonprofits, and education programs to design and scale CS curriculum."
         path="/about"
       />
       <PageBanner
         label="About Prometheus"
-        title="About Prometheus"
-        lead="Prometheus is a coding and computer science education organization focused on helping students develop programming skills through structured curriculum, projects, and learning opportunities."
-        aside={<BannerAside variant="stats" />}
+        title="Curriculum partnerships for education organizations"
+        lead="Prometheus designs computer science curriculum and outreach frameworks so partner organizations can strengthen CS programming for their communities."
       />
       <section className="seo-page">
         <div className="container seo-page-grid">
@@ -28,43 +26,50 @@ export default function AboutPage() {
               </article>
             ))}
             <article>
-              <h2>Programs and opportunities</h2>
+              <h2>Curriculum orientation</h2>
               <p>
-                Beyond coding classes, Prometheus supports students through hackathons, mentoring,
-                and internship pathways that turn computer science education into real experience.
+                Every engagement is curriculum-first: clear progressions, project-based modules, and
+                materials organizations can adapt. We also support outreach and community programming
+                — including hackathons — that help partners activate and sustain CS offerings.
               </p>
             </article>
             <div className="seo-cta-row">
               <Link className="btn btn-primary" to="/curriculum">
-                Explore the Prometheus Coding Curriculum
+                Curriculum partnerships
               </Link>
-              <Link className="btn btn-dark" to="/python">
-                Python Programming with Prometheus
+              <Link className="btn btn-dark" to="/outreach">
+                Curriculum development &amp; outreach
               </Link>
               <a
                 className="btn btn-dark"
-                href={REGISTER_URL}
+                href={OUTREACH_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Register for classes
+                Get involved
               </a>
             </div>
           </div>
           <aside className="seo-side reveal">
             <p className="banner-aside-label">At a glance</p>
             <ul className="seo-side-list">
-              {stats.map((item) => (
-                <li key={item.label}>
-                  <strong>{item.value}</strong>
-                  <span>{item.label}</span>
-                </li>
-              ))}
+              <li>
+                <strong>Curriculum</strong>
+                <span>Frameworks partners can adopt and localize</span>
+              </li>
+              <li>
+                <strong>Outreach</strong>
+                <span>Partnerships that expand organizational CS capacity</span>
+              </li>
+              <li>
+                <strong>Collaboration</strong>
+                <span>Research and technology partners in the network</span>
+              </li>
             </ul>
             <p className="seo-side-note">
-              Looking for details on our levels? See the{" "}
-              <Link to="/curriculum">Prometheus Coding Curriculum</Link> or start with{" "}
-              <Link to="/python">Python programming</Link>.
+              Explore{" "}
+              <Link to="/curriculum">organizations we support</Link> or{" "}
+              <Link to="/outreach">curriculum development &amp; outreach</Link>.
             </p>
           </aside>
         </div>

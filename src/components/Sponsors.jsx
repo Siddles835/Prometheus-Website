@@ -2,10 +2,10 @@ import { sponsors } from "../data/site";
 
 export default function Sponsors() {
   return (
-    <section className="sponsors" aria-label="Sponsors">
+    <section className="sponsors" aria-label="Partner organizations">
       <div className="container">
         <div className="sponsors-inner reveal">
-          <p className="sponsors-label">Supported by</p>
+          <p className="sponsors-label">Partner organizations</p>
           <div className="sponsor-logos">
             {sponsors.map((sponsor) => (
               <a

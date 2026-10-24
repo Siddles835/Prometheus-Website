@@ -1,6 +1,6 @@
 # Prometheus Website
 
-Professional nonprofit website for Prometheus — free Python classes for students.
+Website for Prometheus — curriculum partnerships and education outreach for organizations.
 
 ## Stack
 
@@ -10,11 +10,12 @@ Professional nonprofit website for Prometheus — free Python classes for studen
 ## Pages
 
 - `/` Home
-- `/why` Why Prometheus
-- `/gallery` Gallery
-- `/levels` Levels
-- `/internships` Internships
-- `/testimonials` Testimonials
+- `/about` About Prometheus
+- `/curriculum` Curriculum partnerships
+- `/outreach` Curriculum development & organization outreach
+- `/hackathons` Past hackathons
+
+Legacy paths (`/internships`, `/python`, `/gallery`, `/testimonials`, `/why`, `/levels`) redirect to current pages.
 
 ## Scripts
 

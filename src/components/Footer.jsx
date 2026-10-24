@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { INTERNSHIP_URL, REGISTER_URL, contacts, footerLinks } from "../data/site";
+import { OUTREACH_URL, contacts, footerLinks } from "../data/site";
 
 export default function Footer() {
   return (
@@ -16,9 +16,8 @@ export default function Footer() {
             <span>PROMETHEUS</span>
           </div>
           <p>
-            Prometheus is a coding and computer science education organization — helping students
-            learn Python, programming, and computer science through project-first classes and live
-            guidance.
+            Prometheus is a computer science curriculum and outreach organization — partnering with
+            schools, nonprofits, and education programs to design and scale CS curriculum.
           </p>
         </div>
 
@@ -31,13 +30,8 @@ export default function Footer() {
               </li>
             ))}
             <li>
-              <a href={REGISTER_URL} target="_blank" rel="noopener noreferrer">
-                Register for Prometheus classes
-              </a>
-            </li>
-            <li>
-              <a href={INTERNSHIP_URL} target="_blank" rel="noopener noreferrer">
-                Apply to intern at Prometheus
+              <a href={OUTREACH_URL} target="_blank" rel="noopener noreferrer">
+                Curriculum development &amp; outreach form
               </a>
             </li>
           </ul>
@@ -56,7 +50,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <p>© 2026 Prometheus. Coding &amp; computer science education.</p>
+        <p>© 2026 Prometheus. Curriculum partnerships &amp; education outreach.</p>
       </div>
     </footer>
   );

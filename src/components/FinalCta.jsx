@@ -1,11 +1,12 @@
-import { CONTACT_MAILTO, REGISTER_URL, contacts } from "../data/site";
+import { Link } from "react-router-dom";
+import { CONTACT_MAILTO, OUTREACH_URL, contacts } from "../data/site";
 import { FlameMark, OrbitGraphic } from "./icons/Icons";
 
-const facts = ["Free for students", "Live mentors", "Project-first path"];
+const facts = ["Curriculum partnerships", "Organization outreach", "Shared frameworks"];
 
 export default function FinalCta() {
   return (
-    <section className="final-cta" aria-label="Register">
+    <section className="final-cta" aria-label="Partner with Prometheus">
       <div className="container">
         <div className="cta-panel reveal">
           <div className="cta-art" aria-hidden="true">
@@ -21,10 +22,10 @@ export default function FinalCta() {
             height="88"
           />
           <div className="cta-copy">
-            <h2>Ready to learn with Prometheus?</h2>
+            <h2>Ready to partner with Prometheus?</h2>
             <p>
-              Join Prometheus coding classes to learn Python, programming, and computer science with
-              live guidance and a project-first curriculum.
+              Work with us on computer science curriculum design and organization outreach — so
+              education programs can strengthen CS offerings with frameworks built for partners.
             </p>
             <p className="cta-contact-line">
               Contact {contacts[0].name} at{" "}
@@ -32,7 +33,7 @@ export default function FinalCta() {
               {contacts[1].name} at{" "}
               <a href={`mailto:${contacts[1].email}`}>{contacts[1].email}</a>.
             </p>
-            <ul className="cta-facts" aria-label="Program highlights">
+            <ul className="cta-facts" aria-label="Partnership highlights">
               {facts.map((fact) => (
                 <li key={fact}>{fact}</li>
               ))}
@@ -41,12 +42,15 @@ export default function FinalCta() {
           <div className="cta-actions">
             <a
               className="btn btn-primary"
-              href={REGISTER_URL}
+              href={OUTREACH_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Register now
+              Get involved
             </a>
+            <Link className="btn btn-ghost" to="/curriculum">
+              See partnerships
+            </Link>
             <a className="btn btn-ghost" href={`mailto:${CONTACT_MAILTO}`}>
               Contact us
             </a>

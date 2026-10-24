@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
 const SITE_NAME = "Prometheus";
-const DEFAULT_TITLE = "Prometheus | Coding & Computer Science Education";
+const DEFAULT_TITLE = "Prometheus | Curriculum Partnerships & Education Outreach";
 const DEFAULT_DESCRIPTION =
-  "Prometheus is a coding education organization helping students learn Python, programming, and computer science through structured curriculum, projects, and live guidance.";
+  "Prometheus partners with education organizations to design computer science curriculum and expand outreach — helping schools, nonprofits, and programs strengthen CS offerings.";
 const ORIGIN = "https://prometheuscoding.org";
 
 function setMeta(attr, key, value) {

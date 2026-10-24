@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { REGISTER_URL, navLinks } from "../data/site";
+import { OUTREACH_URL, navLinks } from "../data/site";
 
 export default function Header() {
   const { pathname } = useLocation();
@@ -85,12 +85,12 @@ export default function Header() {
             <li>
               <a
                 className="nav-cta"
-                href={REGISTER_URL}
+                href={OUTREACH_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeMenu}
               >
-                Register
+                Get involved
               </a>
             </li>
           </ul>

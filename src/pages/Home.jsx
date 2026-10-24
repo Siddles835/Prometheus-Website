@@ -12,9 +12,9 @@ export default function Home() {
       <Seo path="/" />
       <Hero />
       <Sponsors />
-      <HackathonHighlight />
       <BrandIntro />
       <HomePathways />
+      <HackathonHighlight />
       <FinalCta />
     </>
   );
