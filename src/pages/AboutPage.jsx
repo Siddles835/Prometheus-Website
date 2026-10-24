@@ -38,7 +38,7 @@ export default function AboutPage() {
                 Curriculum partnerships
               </Link>
               <Link className="btn btn-dark" to="/outreach">
-                Curriculum development &amp; outreach
+                Curriculum development & outreach
               </Link>
               <a
                 className="btn btn-dark"
@@ -69,7 +69,7 @@ export default function AboutPage() {
             <p className="seo-side-note">
               Explore{" "}
               <Link to="/curriculum">organizations we support</Link> or{" "}
-              <Link to="/outreach">curriculum development &amp; outreach</Link>.
+              <Link to="/outreach">curriculum development & outreach</Link>.
             </p>
           </aside>
         </div>

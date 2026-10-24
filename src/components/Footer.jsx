@@ -31,7 +31,7 @@ export default function Footer() {
             ))}
             <li>
               <a href={OUTREACH_URL} target="_blank" rel="noopener noreferrer">
-                Curriculum development &amp; outreach form
+                Curriculum development & outreach form
               </a>
             </li>
           </ul>
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <p>© 2026 Prometheus. Curriculum partnerships &amp; education outreach.</p>
+        <p>© 2026 Prometheus. Curriculum partnerships & education outreach.</p>
       </div>
     </footer>
   );

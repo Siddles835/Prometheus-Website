@@ -58,7 +58,7 @@ export default function HackathonPage() {
               About Prometheus
             </Link>
             <Link className="btn btn-dark" to="/outreach">
-              Curriculum development &amp; outreach
+              Curriculum development & outreach
             </Link>
           </div>
         </div>

@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
+import { FlameMark, OrbitGraphic } from "./icons/Icons";
 
 export default function Hero() {
   return (
     <section className="hero" aria-label="Prometheus introduction">
-      <div className="hero-media" aria-hidden="true">
-        <img
-          src="/assets/gallery/gallery-1.jpeg"
-          alt=""
-          width="1600"
-          height="950"
-          fetchPriority="high"
-        />
+      <div className="hero-media hero-media--brand" aria-hidden="true">
+        <img src="/assets/graphics/banner-grid.svg" alt="" className="hero-grid" />
+        <OrbitGraphic className="hero-orbit" />
+        <FlameMark className="hero-flame" />
+        <img src="/assets/graphics/constellation.svg" alt="" className="hero-constellation" />
       </div>
       <div className="hero-scrim" aria-hidden="true" />
       <div className="hero-grain" aria-hidden="true" />
@@ -24,7 +22,7 @@ export default function Hero() {
             height="180"
           />
           <h1>Prometheus</h1>
-          <p className="hero-tagline">Curriculum partnerships &amp; education outreach</p>
+          <p className="hero-tagline">Curriculum partnerships & education outreach</p>
           <p className="hero-copy">
             Prometheus partners with organizations to design computer science curriculum and expand
             educational outreach — helping schools, nonprofits, and programs strengthen CS

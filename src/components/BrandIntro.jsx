@@ -15,7 +15,7 @@ export default function BrandIntro() {
           <div className="brand-intro-links">
             <Link to="/about">About Prometheus</Link>
             <Link to="/curriculum">Curriculum partnerships</Link>
-            <Link to="/outreach">Curriculum development &amp; outreach</Link>
+            <Link to="/outreach">Curriculum development & outreach</Link>
           </div>
         </div>
         <aside className="brand-intro-panel reveal">

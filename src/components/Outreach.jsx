@@ -17,13 +17,14 @@ export default function Outreach() {
             Join Prometheus on curriculum development and organization outreach — work that helps
             education partners design stronger CS pathways and reach their communities.
           </p>
-          <figure className="internship-visual">
+          <figure className="internship-visual internship-visual--brand" aria-hidden="true">
+            <img src="/assets/graphics/constellation.svg" alt="" />
             <img
-              src="/assets/gallery/gallery-3.jpeg"
-              alt="Prometheus collaborators working on curriculum and outreach"
-              width="1600"
-              height="1001"
-              loading="lazy"
+              src="/assets/brand/prometheus-hero-badge.png"
+              alt=""
+              className="internship-visual-badge"
+              width="120"
+              height="120"
             />
           </figure>
           <div className="internship-actions">

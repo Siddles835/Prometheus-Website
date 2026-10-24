@@ -12,7 +12,7 @@ export default function OutreachPage() {
       />
       <PageBanner
         label="Outreach"
-        title="Curriculum development &amp; organization outreach"
+        title="Curriculum development & organization outreach"
         lead="Contribute to curriculum design and outreach that helps education organizations strengthen computer science programming."
       />
       <Outreach />
